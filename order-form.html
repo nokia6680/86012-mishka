@@ -35,7 +35,96 @@
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
     </div>
+    <form class="page-form">
+      <div class="page-form__item">
+        <h2 class="page-form__legend">Тип</h2>
+        <ul class="page-form__list">
+          <li class="page-form__unit">
+            <input type="radio" name="type" value="Аксессуар для интерьера" id="accs">
+            <label for="accs">Аксессуар для интерьера</label>
+          </li>
+          <li class="page-form__unit">
+            <input type="radio" name="type" value="Детская игрушка" id="toys">
+            <label for="toys">Детская игрушка</label>
+          </li>
+        </ul>
+      </div>
 
+      <div class="page-form__item">
+        <h2 class="page-form__legend">Цвет</h2>
+          <ul class="page-form__list">
+            <li class="page-form__unit">
+              <input type="checkbox" name="color-white" id="white" checked>
+              <label for="white">Белый</label>
+            </li>
+            <li class="page-form__unit">
+              <input type="checkbox" name="color-gray" id="gray" checked>
+              <label for="gray">Серый</label>
+            </li>
+            <li class="page-form__unit">
+              <input type="checkbox" name="color-tiffany" id="tiffany">
+              <label for="tiffany">"Тиффани"</label>
+            </li>
+            <li class="page-form__unit">
+              <input type="checkbox" name="color-black" id="black">
+              <label for="black">Черный</label>
+            </li>
+            <li class="page-form__unit">
+              <input type="checkbox" name="color-pink" id="pink">
+              <label for="pink">Розовый</label>
+            </li>
+            <li class="page-form__unit">
+              <input type="checkbox" name="color-orange" id="orange">
+              <label for="orange">Оранжевый</label>
+            </li>
+          </ul>
+      </div>
+
+      <div class="page-form__item">
+        <h2 class="page-form__legend">Фио</h2>
+        <ul class="page_form__list">
+          <li class="page-form__unit">
+            <label for="name">Имя:</label>
+            <input type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
+          </li>
+          <li class="page-form__unit">
+            <label for="surname">Фамилия:</label>
+            <input type="text" name="surname" placeholder="Введите вашу фамилию*" id="surname" required>
+          </li>
+          <li class="page-form__unit">
+            <label for="fathername">Отчество:</label>
+            <input type="text" name="fathername" placeholder="Отчество, если желаете" id="fathername">
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-form__item">
+        <label for="tel">
+          <h2 class="page-form__legend">Тел</h2>
+        </label>
+        <input type="tel" name="tel" placeholder="+7-XXX-XX-XX*" id="tel" required/>
+        <span class="page-form__icon"></span>
+      </div>
+
+      <div class="page-form__item">
+        <label for="email">
+          <h2 class="page-form__legend">e-mail</h2>
+        </label>
+        <input type="email" name="email" placeholder="Ваш Email*" id="email" required>
+        <span class="page-form__icon"></span>
+      </div>
+
+      <div class="page-form__item">
+        <label for="additional">
+          <h2 class="page-form__legend">Доп</h2>
+        </label>
+        <textarea name="additional" placeholder="Опишите все ваши пожелания к заказу" id="additional"></textarea>
+        <p class="page-form__description">
+          *Поля обязательны для заполнения
+        </p>
+      </div>
+      <button class="page-form__submit" type="submit">Отправить заказ</button>
+    </form>
   </main>
 
   <footer class="page-footer">
