@@ -22,7 +22,7 @@
           <a href="#">Поиск по сайту</a>
         </li>
         <li class="site-list__item">
-          <a href="shopping-cart.html">Корзина: пока пуста</a>
+          <a href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -35,7 +35,7 @@
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
     </div>
-    <form class="page-form">
+    <form class="page-form page-form__container" method="post" action="https://echo.htmlacademy.ru">
       <div class="page-form__item">
         <h2 class="page-form__legend">Тип</h2>
         <ul class="page-form__list">
@@ -52,32 +52,32 @@
 
       <div class="page-form__item">
         <h2 class="page-form__legend">Цвет</h2>
-          <ul class="page-form__list">
-            <li class="page-form__unit">
-              <input type="checkbox" name="color-white" id="white" checked>
-              <label for="white">Белый</label>
-            </li>
-            <li class="page-form__unit">
-              <input type="checkbox" name="color-gray" id="gray" checked>
-              <label for="gray">Серый</label>
-            </li>
-            <li class="page-form__unit">
-              <input type="checkbox" name="color-tiffany" id="tiffany">
-              <label for="tiffany">"Тиффани"</label>
-            </li>
-            <li class="page-form__unit">
-              <input type="checkbox" name="color-black" id="black">
-              <label for="black">Черный</label>
-            </li>
-            <li class="page-form__unit">
-              <input type="checkbox" name="color-pink" id="pink">
-              <label for="pink">Розовый</label>
-            </li>
-            <li class="page-form__unit">
-              <input type="checkbox" name="color-orange" id="orange">
-              <label for="orange">Оранжевый</label>
-            </li>
-          </ul>
+        <ul class="page-form__list">
+          <li class="page-form__unit">
+            <input type="checkbox" name="color-white" id="white" checked>
+            <label for="white">Белый</label>
+          </li>
+          <li class="page-form__unit">
+            <input type="checkbox" name="color-gray" id="gray" checked>
+            <label for="gray">Серый</label>
+          </li>
+          <li class="page-form__unit">
+            <input type="checkbox" name="color-tiffany" id="tiffany">
+            <label for="tiffany">"Тиффани"</label>
+          </li>
+          <li class="page-form__unit">
+            <input type="checkbox" name="color-black" id="black">
+            <label for="black">Черный</label>
+          </li>
+          <li class="page-form__unit">
+            <input type="checkbox" name="color-pink" id="pink">
+            <label for="pink">Розовый</label>
+          </li>
+          <li class="page-form__unit">
+            <input type="checkbox" name="color-orange" id="orange">
+            <label for="orange">Оранжевый</label>
+          </li>
+        </ul>
       </div>
 
       <div class="page-form__item">
@@ -99,25 +99,19 @@
       </div>
 
       <div class="page-form__item">
-        <label for="tel">
-          <h2 class="page-form__legend">Тел</h2>
-        </label>
+        <h2 class="page-form__legend">Тел</h2>
         <input type="tel" name="tel" placeholder="+7-XXX-XX-XX*" id="tel" required/>
         <span class="page-form__icon"></span>
       </div>
 
       <div class="page-form__item">
-        <label for="email">
-          <h2 class="page-form__legend">e-mail</h2>
-        </label>
+        <h2 class="page-form__legend">e-mail</h2>
         <input type="email" name="email" placeholder="Ваш Email*" id="email" required>
         <span class="page-form__icon"></span>
       </div>
 
       <div class="page-form__item">
-        <label for="additional">
-          <h2 class="page-form__legend">Доп</h2>
-        </label>
+        <h2 class="page-form__legend">Доп</h2>
         <textarea name="additional" placeholder="Опишите все ваши пожелания к заказу" id="additional"></textarea>
         <p class="page-form__description">
           *Поля обязательны для заполнения
@@ -127,7 +121,7 @@
     </form>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-footer__container">
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">

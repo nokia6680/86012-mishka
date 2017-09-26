@@ -22,7 +22,7 @@
           <a href="#">Поиск по сайту</a>
         </li>
         <li class="site-list__item">
-          <a href="shopping-cart.html">Корзина: пока пуста</a>
+          <a href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -33,7 +33,7 @@
       <h1 class="page-intro__slogan">Каталог товаров</h1>
     </div>
 
-    <div class="catalog">
+    <div class="catalog catalog__container">
       <article class="catalog__item">
         <a class="catalog__image-link" href="#">
           <img src="#" alt="Зайчик" width="" height="" />
@@ -44,7 +44,7 @@
         </div>
         <div class="catalog__item-purchase">
           <b class="catalog__price">1 200 руб.</b>
-          <button class="catalog__basket" type="button" value="В корзину"></button>
+          <a class="catalog__basket" href="#"><span class="visually-hidden">В корзину</span></a>
         </div>
       </article>
 
@@ -58,7 +58,7 @@
         </div>
         <div class="catalog__item-purchase">
           <b class="catalog__price">690 руб.</b>
-          <button class="catalog__basket" type="button" value="В корзину"></button>
+          <a class="catalog__basket" href="#"><span class="visually-hidden">В корзину</span></a>
         </div>
       </article>
 
@@ -72,12 +72,12 @@
         </div>
         <div class="catalog__item-purchase">
           <b class="catalog__price">1 500 руб.</b>
-          <button class="catalog__basket" type="button" value="В корзину"></button>
+          <a class="catalog__basket" href="#"><span class="visually-hidden">В корзину</span></a>
         </div>
       </article>
     </div>
 
-    <section class="videoreview">
+    <section class="videoreview videoreview__container">
       <h2 class="videoreview__title">Процесс произовдства</h2>
       <video src="#" preload="none" poster="#" width="" height=""></video>
       <p class="videoreview__description">
@@ -87,7 +87,19 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <!--Модальное окно-->
+  <section class="modal modal__container">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <b class="modal__option">Выберите размер:</b>
+    <div class="modal__buttons">
+      <button class="modal__buttons-size" type="button" value="Small">S</button>
+      <button class="modal__buttons-size" type="button" value="Medium">M</button>
+      <button class="modal__buttons-size" type="button" value="Large">L</button>
+    </div>
+    <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
+  </section>
+
+  <footer class="page-footer page-footer__container">
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
