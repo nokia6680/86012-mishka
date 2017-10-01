@@ -1,8 +1,10 @@
 @import "variables.scss";
 @import "mixins.scss";
+
 * {
   box-sizing: border-box;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -13,11 +15,13 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 body {
   @include global-text;
   min-width: 320px;
   background-color: $bg-white;
 }
+
 img {
   max-width: 100%;
   height: auto;

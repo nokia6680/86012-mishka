@@ -3,6 +3,7 @@
 .contacts-details__title {
   margin: 0;
   padding: 0;
+
   @include contacts-title-text;
 }
 
