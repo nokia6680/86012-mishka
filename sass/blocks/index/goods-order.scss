@@ -1,13 +1,8 @@
 @import "variables.scss";
 
-.goods-order {
-
-}
-
 .goods-order__price {
   @include goods-price-text;
 }
-
 .goods-order__book {
   @include goods-order-text;
 }
