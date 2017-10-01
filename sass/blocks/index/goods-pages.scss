@@ -6,14 +6,17 @@
   margin: 0;
   padding: 0;
 }
+
 .goods-pages__title {
   margin: 0;
   padding: 0;
 }
+
 .goods-pages__title--interior {
   background-color: $bg-green;
   @include goods-text;
 }
+
 .goods-pages__title--toys {
   background-color: $bg-darkgreen;
   @include goods-text;
