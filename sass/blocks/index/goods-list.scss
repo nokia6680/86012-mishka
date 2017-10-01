@@ -1,0 +1,10 @@
+@import "variables.scss";
+
+.goods-list {
+
+}
+
+.goods-list__parameter,
+.goods-list__value {
+  @include global-text;
+}

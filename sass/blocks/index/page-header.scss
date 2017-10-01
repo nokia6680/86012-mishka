@@ -1,0 +1,11 @@
+@import "variables.scss";
+
+.page-header {
+  font-style: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+
+  background-color: $bg-white;
+}

@@ -1,0 +1,7 @@
+@import "variables.scss";
+
+.reviews__title {
+  margin: 0;
+  padding: 0;
+  @include index-title-text;
+}

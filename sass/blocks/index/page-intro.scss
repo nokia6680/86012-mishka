@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+.page-intro {
+  background-image: url('../img/hero-mobile@1x.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-intro__slogan {
+  margin: 0;
+  padding: 0;
+  @include intro-text;
+}

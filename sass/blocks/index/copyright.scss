@@ -1,0 +1,5 @@
+@import "variables.scss";
+
+.copyright__text {
+  @include copyright-text;
+}

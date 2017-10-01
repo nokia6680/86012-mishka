@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+.advantages__slogan {
+  margin: 0;
+  padding: 0;
+  @include index-title-text;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__title {
+  @include advantage-title-text;
+}
