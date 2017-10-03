@@ -1,0 +1,24 @@
+.order-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-form__item {
+  width: 320px;
+}
+
+.order-form__legend {
+  @include form-title-text;
+  @include marpad-null;
+}
+
+.order-form__list {
+  @include marpad-null;
+  list-style-type: none;
+}
+
+.order-form__unit label {
+  @include form-label-text;
+}

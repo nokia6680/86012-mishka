@@ -157,3 +157,114 @@
   color: #000000;
   text-decoration: none;
 }
+
+@mixin form-intro-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 13px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin form-title-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+  }
+  line-height: 17px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+@mixin form-label-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin form-required-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 14px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 16px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin page-button-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+  }
+  line-height: 17px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+@mixin marpad-null {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin catalog-item-title {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin catalog-item-details {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 13px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin catalog-item-price {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin videoreview-description {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 13px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #444444;
+  text-decoration: none;
+}

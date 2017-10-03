@@ -1,0 +1,16 @@
+.catalog-item__name {
+  @include catalog-item-title;
+}
+
+.catalog-item__name--link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-item__details {
+  @include catalog-item-details;
+}
+
+.catalog-item__price {
+  @include catalog-item-price;
+}
