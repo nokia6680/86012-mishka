@@ -19,3 +19,7 @@
 .contacts-details__send-us {
   @include review-description-text;
 }
+
+.contacts__container {
+  @include container;
+}

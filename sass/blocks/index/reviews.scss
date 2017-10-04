@@ -4,3 +4,8 @@
 
   @include index-title-text;
 }
+
+
+.reviews__container {
+  @include container;
+}

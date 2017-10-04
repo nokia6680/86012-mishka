@@ -9,3 +9,7 @@
 .goods-header__description {
   @include global-text;
 }
+
+.goods-header__container {
+  @include container;
+}

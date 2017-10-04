@@ -1,3 +1,7 @@
+.copyright__container {
+  @include container;
+}
+
 .copyright__text {
   @include copyright-text;
 }

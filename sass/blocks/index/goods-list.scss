@@ -2,3 +2,7 @@
 .goods-list__value {
   @include global-text;
 }
+
+.goods-list__container {
+  @include container;
+}

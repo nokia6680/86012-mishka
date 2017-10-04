@@ -10,3 +10,7 @@
 
   @include intro-text;
 }
+
+.page-intro__slogan--container {
+  @include container;
+}

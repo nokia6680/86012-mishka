@@ -14,3 +14,7 @@
 .advantages__title {
   @include advantage-title-text;
 }
+
+.advantages__container {
+  @include container;
+}
