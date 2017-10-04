@@ -1,23 +1,26 @@
+.goods-pages__title-container {
+  @include container;
+}
+
 .goods-pages__link {
-  width: 320px;
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
 .goods-pages__title {
-  @include marpad-null;
   @include goods-text;
+
+  padding-right: 130px;
 }
 
 .goods-pages {
   background-color: $bg-green;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .goods-pages:last-of-type {
   background-color: $bg-darkgreen;
-}
-
-.goods-pages__title-container {
-  @include container;
 }

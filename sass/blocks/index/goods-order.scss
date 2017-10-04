@@ -1,3 +1,14 @@
+.goods-order__container {
+  @include container;
+}
+
+.goods-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .goods-order__price {
   @include goods-price-text;
 }

@@ -1,3 +1,14 @@
+.goods-list__container {
+  @include container;
+}
+
+.goods-list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .goods-list__parameter,
 .goods-list__value {
   @include global-text;
