@@ -1,0 +1,12 @@
+.order-intro {
+  background-color: #f1f1f1;
+}
+
+.order-intro__slogan {
+  @include marpad-null;
+  @include intro-text;
+}
+
+.order-intro__description {
+  @include form-intro-text;
+}

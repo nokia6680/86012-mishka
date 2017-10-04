@@ -1,0 +1,18 @@
+.reviews-wrapper__item {
+  margin: 0;
+  padding: 0;
+
+  @include review-description-text;
+}
+
+.reviews-wrapper__author-name {
+  @include author-name-text;
+}
+
+.reviews-wrapper__author-instagram {
+  @include author-instagram-text;
+}
+
+.reviews-wrapper__add {
+  @include reviews-add-text;
+}

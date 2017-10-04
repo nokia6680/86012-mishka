@@ -1,0 +1,11 @@
+.goods-header__name {
+  @include index-title-text;
+}
+
+.goods-header__status {
+  @include goods-status-text;
+}
+
+.goods-header__description {
+  @include global-text;
+}

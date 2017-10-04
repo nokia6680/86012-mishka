@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-  <header class="page-header">
+  <header class="page-header" href="index.html">
     <a class="page-header__logo">
       <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.589px" height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve">
         <g>
@@ -23,13 +23,13 @@
       </svg>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a href="order-area.html">Вязание на заказ</a>
+          <a href="order-form.html">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
           <a href="#">Поиск по сайту</a>
@@ -41,131 +41,98 @@
     </nav>
   </header>
 
-  <main class="page-main">
-    <div class="page-intro">
-      <h1 class="page-intro__slogan">Милые штуки ручной работы для дома</h1>
+  <main class="page-main order">
+    <div class="order-intro">
+      <h1 class="order-intro__slogan">Вязание на заказ</h1>
+      <p class="order-intro__description">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
     </div>
-    <div class="goods-pages">
-      <a class="goods-pages__link" href="#"><h2 class="goods-pages__title goods-pages__title--interior">Предметы интерьера</h2></a>
-      <a class="goods-pages__link" href="#"><h2 class="goods-pages__title goods-pages__title--toys">Детские игрушки</h2></a>
-    </div>
-
-    <section class="goods-card">
-      <header class="goods-header goods-header__container">
-        <h2 class="goods-header__name">Вязаные корзинки</h2>
-        <b class="goods-header__status">Товар недели</b>
-        <p class="goods-header__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
-      </header>
-
-      <table class="goods-list goods-list__container">
-        <tr class="goods-list__item">
-          <td class="goods-list__parameter">
-            Цвет:
-          </td>
-          <td class="goods-list__value">
-            Тиффани/Серый
-          </td>
-        </tr>
-        <tr class="goods-list__item">
-          <td class="goods-list__parameter">
-            Диаметр:
-          </td>
-          <td class="goods-list__value">
-            25 см
-          </td>
-        </tr>
-        <tr class="goods-list__item">
-          <td class="goods-list__parameter">
-            Высота:
-          </td>
-          <td class="goods-list__value">
-            15 см
-          </td>
-        </tr>
-      </table>
-
-      <div class="goods-list__image goods-image__container">
-        <img src="../img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение вязаного шарфа" />
-      </div>
-
-      <div class="goods-order goods-order__container">
-        <b class="goods-order__price">Цена: 990 руб.</b>
-        <button class="goods-order__book" type="button">Заказать</button>
-      </div>
-    </section>
-
-    <section class="advantages advantages__container">
-      <h2 class="advantages__slogan">Коротко о нас</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item advantages__item--eco">
-          <b class="advantages__title">Экологически чистые материалы</b>
-        </li>
-        <li class="advantages__item advantages__item--style">
-          <b class="advantages__title">Скандинавский стиль по российской цене</b>
-        </li>
-        <li class="advantages__item advantages__item--like">
-          <b class="advantages__title">Увеличивает лайки на фотографиях</b>
-        </li>
-        <li class="advantages__item advantages__item--love">
-          <b class="advantages__title">Связано вручную с любовью и умилением</b>
-        </li>
-        <li class="advantages__item advantages__item--nation">
-          <b class="advantages__title">Поддержка отечественного производителя</b>
-        </li>
-        <li class="advantages__item advantages__item--present">
-          <b class="advantages__title">Поставляется в подарочной упаковке</b>
-        </li>
-      </ul>
-    </section>
-
-    <section class="reviews reviews__container">
-      <h2 class="reviews__title">Отзывы</h2>
-      <div class="reviews-wrapper">
-        <blockquote class="reviews-wrapper__item">
-            Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-        </blockquote>
-        <cite class="reviews-wrapper__author-name">Анастасия Красильникова</cite>
-        <a class="reviews-wrapper__author-instagram" href="#">@misssssiskras</a>
-        <div class="reviews-toggle">
-          <button class="reviews-toggle__previous" type="button"><span class="visually-hidden">Назад</span></button>
-          <button class="reviews-toggle__next" type="button"><span class="visually-hidden">Вперед</span></button>
-        </div>
-        <a class="reviews-wrapper__add" href="#">Написать</a>
-      </div>
-    </section>
-
-    <section class="contacts">
-      <div class="contacts-details contacts__container">
-        <h2 class="contacts-details__title">Контакты</h2>
-        <ul class="contacts-details__list">
-          <li class="contacts-details__item">
-            <span class="contacts-details__value">e-mail:</span>
-            <a class="contacts-details__email-to" href="#">info@mimimishkashop.ru</a>
+    <form class="order-form page-form__container" method="post" action="https://echo.htmlacademy.ru">
+      <div class="order-form__item">
+        <h2 class="order-form__legend">Тип</h2>
+        <ul class="order-form__list">
+          <li class="order-form__unit">
+            <input type="radio" name="type" value="Аксессуар для интерьера" id="accs">
+            <label for="accs">Аксессуар для интерьера</label>
           </li>
-          <li class="contacts-details__item">
-            <span class="contacts-details__value">адрес:</span>
-            <span class="contacts-details__description">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+          <li class="order-form__unit">
+            <input type="radio" name="type" value="Детская игрушка" id="toys">
+            <label for="toys">Детская игрушка</label>
           </li>
         </ul>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2924173796839!2d30.32223192662812!3d59.939030947430005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506287609902" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <a class="contacts-details__send-us" href="#">Напишите нам</a>
-    </section>
-  </main>
 
-<!--Модальное окно-->
-  <section class="modal modal__container">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <b class="modal__option">Выберите размер:</b>
-    <div class="modal__buttons">
-      <button class="modal__buttons-size" type="button" value="Small">S</button>
-      <button class="modal__buttons-size" type="button" value="Medium">M</button>
-      <button class="modal__buttons-size" type="button" value="Large">L</button>
-    </div>
-    <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
-  </section>
+      <div class="order-form__item">
+        <h2 class="order-form__legend">Цвет</h2>
+        <ul class="order-form__list">
+          <li class="order-form__unit">
+            <input type="checkbox" name="color-white" id="white" checked>
+            <label for="white">Белый</label>
+          </li>
+          <li class="order-form__unit">
+            <input type="checkbox" name="color-gray" id="gray" checked>
+            <label for="gray">Серый</label>
+          </li>
+          <li class="order-form__unit">
+            <input type="checkbox" name="color-tiffany" id="tiffany">
+            <label for="tiffany">"Тиффани"</label>
+          </li>
+          <li class="order-form__unit">
+            <input type="checkbox" name="color-black" id="black">
+            <label for="black">Черный</label>
+          </li>
+          <li class="order-form__unit">
+            <input type="checkbox" name="color-pink" id="pink">
+            <label for="pink">Розовый</label>
+          </li>
+          <li class="order-form__unit">
+            <input type="checkbox" name="color-orange" id="orange">
+            <label for="orange">Оранжевый</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="order-form__item">
+        <h2 class="order-form__legend">Фио</h2>
+        <ul class="order-form__list">
+          <li class="order-form__unit">
+            <label for="name">Имя:</label>
+            <input type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
+          </li>
+          <li class="order-form__unit">
+            <label for="surname">Фамилия:</label>
+            <input type="text" name="surname" placeholder="Введите вашу фамилию*" id="surname" required>
+          </li>
+          <li class="order-form__unit">
+            <label for="fathername">Отчество:</label>
+            <input type="text" name="fathername" placeholder="Отчество, если желаете" id="fathername">
+          </li>
+        </ul>
+      </div>
+
+      <div class="order-form__item">
+        <h2 class="order-form__legend">Тел</h2>
+        <input type="tel" name="tel" placeholder="+7-XXX-XX-XX*" id="tel" required/>
+        <span class="order-form__icon"></span>
+      </div>
+
+      <div class="order-form__item">
+        <h2 class="order-form__legend">e-mail</h2>
+        <input type="email" name="email" placeholder="Ваш Email*" id="email" required>
+        <span class="order-form__icon"></span>
+      </div>
+
+      <div class="order-form__item">
+        <h2 class="order-form__legend">Доп</h2>
+        <textarea name="additional" placeholder="Опишите все ваши пожелания к заказу" id="additional"></textarea>
+        <p class="order-form__description">
+          *Поля обязательны для заполнения
+        </p>
+      </div>
+      <button class="page-button order-button order-form__submit" type="submit">Отправить заказ</button>
+    </form>
+  </main>
 
   <footer class="page-footer">
     <div class="page-footer__social social page-footer__container">

@@ -1,0 +1,7 @@
+.videoreview__title {
+  @include catalog-item-title;
+}
+
+.videoreview__description {
+  @include videoreview-description;
+}

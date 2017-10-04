@@ -1,0 +1,270 @@
+@mixin global-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: 300;
+  }
+  line-height: 24px;
+  color: #444444;
+}
+/*Цвет текста навигации*/
+@mixin navi-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+  }
+  line-height: 24px;
+  color: #000000;
+}
+/*Цвет текста интро*/
+@mixin intro-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 27px;
+    weight: bold;
+  }
+  line-height: 30px;
+  color: #000000;
+}
+/*Цвет текста зеленых кнопок*/
+@mixin goods-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 19px;
+    weight: bold;
+  }
+  line-height: 24px;
+  color: #ffffff;
+}
+/*Цвет текста названия товара на главной"*/
+@mixin index-title-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 25px;
+    weight: bold;
+  }
+  line-height: 30px;
+  color: #000000;
+}
+/*Цвет текста статуса товара*/
+@mixin goods-status-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+  }
+  line-height: 20px;
+  color: #63d1bb;
+}
+/*Цвет текста цены товара в карточке на главной*/
+@mixin goods-price-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+  }
+  line-height: 24px;
+  color: #444444;
+}
+/*Цвет текста кнопки "Заказать"*/
+@mixin goods-order-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+  }
+  line-height: 20px;
+  color: #444444;
+}
+/*Стиль и цвет текста списка преимуществ*/
+@mixin advantage-title-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+  }
+  line-height: 20px;
+  color: #000000;
+}
+/*Текст отзыва*/
+@mixin review-description-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin author-name-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+}
+
+@mixin author-instagram-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin reviews-add-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 18px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+}
+/*Название раздела Контакты*/
+@mixin contacts-title-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 18px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin copyright-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 19px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin form-intro-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 13px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin form-title-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+  }
+  line-height: 17px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+@mixin form-label-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin form-required-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 14px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 16px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin page-button-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+  }
+  line-height: 17px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+@mixin marpad-null {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin catalog-item-title {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin catalog-item-details {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 13px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin catalog-item-price {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin videoreview-description {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 13px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #444444;
+  text-decoration: none;
+}

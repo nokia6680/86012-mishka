@@ -1,0 +1,21 @@
+.contacts-details__title {
+  margin: 0;
+  padding: 0;
+
+  @include contacts-title-text;
+}
+
+.contacts-details__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-details__item {
+  @include review-description-text;
+}
+
+.contacts-details__email-to,
+.contacts-details__send-us {
+  @include review-description-text;
+}
