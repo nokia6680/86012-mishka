@@ -5,9 +5,11 @@
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
   </head>
   <body>
-  <header class="page-header">
+  <header class="page-header page-header__container">
     <a class="page-header__logo" href="index.html">
       <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.589px" height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve">
         <g>
@@ -22,7 +24,7 @@
         </g>
       </svg>
     </a>
-    <nav class="main-nav main-nav__container">
+    <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -42,7 +44,7 @@
   </header>
 
   <main class="page-main shop">
-    <div class="shop-intro">
+    <div class="shop-intro shop-intro__container">
       <h1 class="shop-intro__slogan">Каталог товаров</h1>
     </div>
 
@@ -113,7 +115,7 @@
   </section>
 
   <footer class="page-footer">
-    <div class="page-footer__social social page-footer__container">
+    <div class="page-footer__social social social__container">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в инстаграме</span></a>
@@ -126,7 +128,7 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright page-footer__container">
+    <div class="page-footer__copyright copyright copyright__container">
       <b class="copyright__text">Разработано</b>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
     </div>

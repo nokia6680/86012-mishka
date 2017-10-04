@@ -1,8 +1,6 @@
 .order-form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .order-form__item {
@@ -21,4 +19,8 @@
 
 .order-form__unit label {
   @include form-label-text;
+}
+
+.order-form__container {
+  @include container;
 }

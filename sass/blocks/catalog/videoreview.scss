@@ -5,3 +5,7 @@
 .videoreview__description {
   @include videoreview-description;
 }
+
+.videoreview__container {
+  @include container;
+}

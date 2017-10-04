@@ -7,6 +7,10 @@
   @include intro-text;
 }
 
-.order-intro__description {
-  @include form-intro-text;
+.order-intro__container {
+  @include container;
+}
+
+.order-slogan__container {
+  @include container;
 }
