@@ -1,3 +1,10 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .reviews__title {
   margin: 0;
   padding: 0;

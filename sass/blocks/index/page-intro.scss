@@ -1,19 +1,70 @@
 .page-intro {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 
-  padding-top: 75px;
-  padding-bottom: 120px;
-
   text-align: center;
+
+  padding-top: 75px;
+}
+
+.page-intro--catalog {
+  background: #f1f1f1 url() 0 0 no-repeat;
+
+  padding-bottom: 75px;
+}
+
+.page-intro__container {
+  @include container;
+
 }
 
 .page-intro__slogan {
   @include marpad-null;
   @include intro-text;
+
+  margin-bottom: 137px;
 }
 
-.page-intro__slogan--container {
-  @include container;
+.page-intro__slogan--catalog {
+  margin-bottom: 0;
+}
+
+.page-goods__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-list {
+  display: none;
+  list-style: none;
+}
+
+.intro-list__link {
+  @include navi-text;
+
+  text-decoration: none;
+  width: 100%;
+}
+
+.page-intro__delivery {
+  @include delivery-text;
+
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-goods__list {
+    @include container;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .page-goods__title--interior,
+  .page-goods__title--toys {
+    width: 50%;
+  }
+
 }

@@ -1,0 +1,28 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-list__item {
+  padding-left: 45px;
+}
+
+.user-list--hide {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list--hide {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    order: 1;
+  }
+
+  .user-list__item--search {
+    display: none;
+  }
+}

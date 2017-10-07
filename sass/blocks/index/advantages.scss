@@ -1,3 +1,10 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
 .advantages__slogan {
   margin: 0;
   padding: 0;
@@ -9,6 +16,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.advantages__item {
+  padding-top: 80px;
 }
 
 .advantages__title {

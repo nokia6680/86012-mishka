@@ -1,0 +1,25 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.site-list__item {
+  padding-left: 45px;
+}
+
+.site-list--hide {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list--hide {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    order: 3;
+  }
+
+}

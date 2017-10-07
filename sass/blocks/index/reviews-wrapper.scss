@@ -1,3 +1,10 @@
+.reviews-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .reviews-wrapper__item {
   margin: 0;
   padding: 0;
@@ -13,6 +20,12 @@
   @include author-instagram-text;
 }
 
+.reviews-toggle {
+  align-self: center;
+}
+
 .reviews-wrapper__add {
   @include reviews-add-text;
+
+  align-self: center;
 }

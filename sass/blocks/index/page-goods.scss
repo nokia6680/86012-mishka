@@ -1,0 +1,32 @@
+.page-goods__link-container {
+  @include container;
+}
+
+.page-goods__link {
+  text-decoration: none;
+
+  @include goods-text;
+
+  padding-right: 130px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  display: block;
+  height: 100%;
+}
+
+.page-goods__item--interior {
+  background-color: $bg-green;
+  text-align: left;
+}
+
+.page-goods__item--toys {
+  background-color: $bg-darkgreen;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .page-goods_list--desktop {
+
+  }
+}

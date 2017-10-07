@@ -2,6 +2,12 @@
   @include container;
 }
 
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .copyright__text {
   @include copyright-text;
 }

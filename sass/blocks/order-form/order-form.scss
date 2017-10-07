@@ -1,10 +1,16 @@
+.order-form__container {
+  @include container;
+}
+
+.order-button__container {
+  @include container;
+}
+
+
 .order-form {
   display: flex;
   flex-direction: column;
-}
-
-.order-form__item {
-  width: 320px;
+  justify-content: space-between;
 }
 
 .order-form__legend {
@@ -19,8 +25,4 @@
 
 .order-form__unit label {
   @include form-label-text;
-}
-
-.order-form__container {
-  @include container;
 }

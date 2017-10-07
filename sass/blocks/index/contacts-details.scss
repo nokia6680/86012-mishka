@@ -1,3 +1,18 @@
+.contacts__container {
+  @include container;
+}
+
+.contacts__send-us--container {
+  @include container;
+}
+
+.contacts_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .contacts-details__title {
   margin: 0;
   padding: 0;
@@ -13,6 +28,15 @@
 
 .contacts-details__item {
   @include review-description-text;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contacts-details__value {
+  align-self: flex-start;
 }
 
 .contacts-details__email-to,
@@ -20,6 +44,11 @@
   @include review-description-text;
 }
 
-.contacts__container {
-  @include container;
+.contacts-details__email-to {
+  margin-left: 32px;
+}
+
+.contacts-details__description {
+  width: 141px;
+  margin-left: 32px;
 }

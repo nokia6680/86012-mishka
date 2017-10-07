@@ -1,13 +1,44 @@
-.main-nav {
-  @include navi-text;
+.main-nav__container {
+  @include container;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-nav__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-nav__image {
+  margin: 0 auto;
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
+  @include marpad-null;
   list-style: none;
 }
 
-.site-list__item a {
+.site-list__link,
+.user-list__link {
+  @include navi-text;
+
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

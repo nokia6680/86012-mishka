@@ -4,12 +4,18 @@
 
 .goods-header__name {
   @include index-title-text;
+
+  margin-top: 33px;
+  margin-bottom: 0;
 }
 
 .goods-header__status {
   @include goods-status-text;
+  @include marpad-null;
 }
 
 .goods-header__description {
   @include global-text;
+
+  margin-top: 28px;
 }

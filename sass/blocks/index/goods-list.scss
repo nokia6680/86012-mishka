@@ -2,6 +2,13 @@
   @include container;
 }
 
+.goods-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .goods-list__item {
   display: flex;
   flex-direction: row;
@@ -12,6 +19,7 @@
 .goods-list__parameter,
 .goods-list__value {
   @include global-text;
+  @include marpad-null;
 }
 
 .goods-list__container {

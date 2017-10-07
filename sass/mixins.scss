@@ -269,6 +269,18 @@
   text-decoration: none;
 }
 
+@mixin delivery-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #444444;
+  text-decoration: none;
+}
+
 @mixin container {
   width: 320px;
   margin: 0 auto;
