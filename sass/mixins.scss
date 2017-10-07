@@ -17,6 +17,17 @@
   line-height: 24px;
   color: #000000;
 }
+
+@mixin under-navi-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: bold;
+  }
+  line-height: 24px;
+  color: #000000;
+}
+
 /*Цвет текста интро*/
 @mixin intro-text {
   font: {
@@ -25,6 +36,26 @@
     weight: bold;
   }
   line-height: 30px;
+  color: #000000;
+}
+
+@mixin intro-text-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 43px;
+    weight: bold;
+  }
+  line-height: 50px;
+  color: #000000;
+}
+
+@mixin intro-text-desctop {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 53px;
+    weight: bold;
+  }
+  line-height: 57px;
   color: #000000;
 }
 /*Цвет текста зеленых кнопок*/

@@ -26,3 +26,13 @@
     display: none;
   }
 }
+
+
+@media (min-width: $desctop-width) {
+  .user-list--hide {
+    display: flex;
+    flex-direction: row;
+    order: 2;
+  }
+
+}

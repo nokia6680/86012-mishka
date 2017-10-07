@@ -42,3 +42,24 @@
     display: none;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .main-nav__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__logo {
+    order: 2;
+  }
+
+  .site-list {
+    order: 1;
+  }
+
+  .user-list {
+    order: 3;
+  }
+
+}

@@ -1,0 +1,17 @@
+.intro-list {
+  padding: 0;
+  margin: 0;
+}
+
+.intro-list__item {
+  margin-right: 60px;
+}
+
+.intro-list__item:last-child {
+  margin-right: 0;
+}
+
+.intro-list__link {
+  @include under-navi-text;
+
+}
