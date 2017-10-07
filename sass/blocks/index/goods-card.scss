@@ -1,14 +1,32 @@
-.goods-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .goods-image__container {
   @include container;
 }
 
 .goods-order__container {
   @include container;
+}
+
+.goods-list__container {
+  @include container;
+}
+
+.goods-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.goods-list {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
 }

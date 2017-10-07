@@ -1,3 +1,7 @@
+.page-list__link-container {
+  @include container;
+}
+
 .page-list {
   display: flex;
   flex-direction: column;
@@ -17,10 +21,6 @@
   text-align: left;
 }
 
-.page-list__link-container {
-  @include container;
-}
-
 .page-list__link {
   text-decoration: none;
 
@@ -35,6 +35,24 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-list {
+    @include container;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .page-list__item {
+    width: 50%;
+  }
+
+  .page-list__link {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desctop-width) {
   .page-list {
     @include container;
 

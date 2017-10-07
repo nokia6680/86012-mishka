@@ -1,27 +1,4 @@
-.goods-list__container {
-  @include container;
-}
-
-.goods-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.goods-list__item {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.goods-list__parameter,
-.goods-list__value {
-  @include global-text;
-  @include marpad-null;
-}
-
-.goods-list__container {
-  @include container;
+.list-item {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }

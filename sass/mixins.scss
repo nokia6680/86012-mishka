@@ -88,6 +88,17 @@
   line-height: 20px;
   color: #63d1bb;
 }
+
+@mixin table-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: normal;
+  }
+  line-height: 20px;
+  color: #444444;
+}
+
 /*Цвет текста цены товара в карточке на главной*/
 @mixin goods-price-text {
   font: {

@@ -2,6 +2,12 @@
   @include container;
 }
 
+.goods-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .goods-header__name {
   @include index-title-text;
 
@@ -18,4 +24,27 @@
   @include global-text;
 
   margin-top: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .goods-header__name {
+    margin: 0;
+  }
+
+  .goods-header__status {
+    width: 100px;
+    text-align: center;
+  }
+
+  .goods-header__description {
+    width: 50%;
+    text-align: left;
+  }
 }
