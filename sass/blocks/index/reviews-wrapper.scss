@@ -5,27 +5,50 @@
   align-items: flex-start;
 }
 
-.reviews-wrapper__item {
-  margin: 0;
-  padding: 0;
-
-  @include review-description-text;
-}
-
-.reviews-wrapper__author-name {
-  @include author-name-text;
-}
-
-.reviews-wrapper__author-instagram {
-  @include author-instagram-text;
-}
-
-.reviews-toggle {
-  align-self: center;
-}
-
 .reviews-wrapper__add {
   @include reviews-add-text;
 
   align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .reviews-wrapper__title {
+    order: 1;
+  }
+
+  .reviews-wrapper__item {
+    order: 3;
+  }
+
+  .reviews-wrapper__add {
+    order: 2;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .reviews-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .reviews-wrapper__title {
+    order: 1;
+    margin-left: 175px;
+  }
+
+  .reviews-wrapper__item {
+    order: 3;
+    margin-left: 175px;
+  }
+
+  .reviews-wrapper__add {
+    order: 2;
+  }
 }

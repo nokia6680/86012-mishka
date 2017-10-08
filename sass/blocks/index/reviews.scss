@@ -1,8 +1,9 @@
+.reviews-wrapper__container {
+  @include container;
+}
+
 .reviews {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  margin-bottom: 70px;
 }
 
 .reviews__title {
@@ -10,9 +11,4 @@
   padding: 0;
 
   @include index-title-text;
-}
-
-
-.reviews__container {
-  @include container;
 }

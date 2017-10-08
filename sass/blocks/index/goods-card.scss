@@ -1,24 +1,10 @@
-.goods-image__container {
-  @include container;
-}
-
-.goods-order__container {
-  @include container;
-}
-
-.goods-list__container {
-  @include container;
-}
-
 .goods-card {
+  @include container;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
-}
-
-.goods-list {
-  width: 100%;
+  align-items: flex-start;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,6 +13,22 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-  }
 
+    @include container;
+
+    position: relative;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .goods-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include container;
+
+    position: relative;
+  }
 }

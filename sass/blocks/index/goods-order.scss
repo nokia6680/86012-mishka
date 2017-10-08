@@ -1,7 +1,3 @@
-.goods-order__container {
-  @include container;
-}
-
 .goods-order {
   display: flex;
   flex-direction: column;
@@ -15,4 +11,17 @@
 
 .goods-order__book {
   @include goods-order-text;
+}
+
+
+@media (min-width: $tablet-width) {
+  .goods-order__price {
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .goods-order__price {
+    margin-bottom: 34px;
+  }
 }

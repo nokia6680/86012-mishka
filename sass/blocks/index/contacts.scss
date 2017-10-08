@@ -20,3 +20,13 @@
 .contacts-details__send-us {
   align-self: center;
 }
+
+@media (min-width: $desctop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-left: 175px;
+  }
+}

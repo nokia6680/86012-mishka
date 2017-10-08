@@ -73,87 +73,88 @@
     </ul>
   </header>
   <main class="page-main">
-    <section class="goods-card">
-      <header class="goods-header goods-header__container">
+    <section class="goods-card goods-card--desctop">
+      <div class="goods-header goods-header__container">
         <h2 class="goods-header__name">Вязаные корзинки</h2>
         <b class="goods-header__status">Товар недели</b>
-        <p class="goods-header__description">
+      </div>
+      <div class="goods-wrapper goods-wrapper__container">
+        <p class="goods-wrapper__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
-      </header>
-
-      <table class="goods-list goods-list__container">
-        <tr class="list-item">
-          <td class="list__parameter">
-            Цвет:
-          </td>
-          <td class="list__value">
-            Тиффани/Серый
-          </td>
-        </tr>
-        <tr class="list__item">
-          <td class="list__parameter">
-            Диаметр:
-          </td>
-          <td class="list__value">
-            25 см
-          </td>
-        </tr>
-        <tr class="list__item">
-          <td class="list__parameter">
-            Высота:
-          </td>
-          <td class="list__value">
-            15 см
-          </td>
-        </tr>
-      </table>
-
-      <div class="goods-list__image goods-image__container">
-        <img src="../img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение вязаного шарфа" />
-      </div>
-
-      <div class="goods-order goods-order__container">
-        <b class="goods-order__price">Цена: 990 руб.</b>
-        <button class="goods-order__book" type="button">Заказать</button>
+        <table class="goods-wrapper__list goods-list">
+          <tr class="list-item">
+            <td class="list__parameter">
+              Цвет:
+            </td>
+            <td class="list__value">
+              Тиффани/Серый
+            </td>
+          </tr>
+          <tr class="list__item">
+            <td class="list__parameter">
+              Диаметр:
+            </td>
+            <td class="list__value">
+              25 см
+            </td>
+          </tr>
+          <tr class="list__item">
+            <td class="list__parameter">
+              Высота:
+            </td>
+            <td class="list__value">
+              15 см
+            </td>
+          </tr>
+        </table>
+        <div class="goods-wrapper__image">
+          <img src="../img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение вязаного шарфа" />
+        </div>
+        <div class="goods-wrapper__order goods-order">
+          <b class="goods-order__price">Цена: 990 руб.</b>
+          <button class="goods-order__book" type="button">Заказать</button>
+        </div>
       </div>
     </section>
 
-    <section class="advantages advantages__container">
-      <h2 class="advantages__slogan">Коротко о нас</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item advantages__item--eco">
-          <b class="advantages__title">Экологически чистые материалы</b>
-        </li>
-        <li class="advantages__item advantages__item--style">
-          <b class="advantages__title">Скандинавский стиль по российской цене</b>
-        </li>
-        <li class="advantages__item advantages__item--like">
-          <b class="advantages__title">Увеличивает лайки на фотографиях</b>
-        </li>
-        <li class="advantages__item advantages__item--love">
-          <b class="advantages__title">Связано вручную с любовью и умилением</b>
-        </li>
-        <li class="advantages__item advantages__item--nation">
-          <b class="advantages__title">Поддержка отечественного производителя</b>
-        </li>
-        <li class="advantages__item advantages__item--present">
-          <b class="advantages__title">Поставляется в подарочной упаковке</b>
-        </li>
-      </ul>
+    <section class="advantages">
+      <div class="advantages__container">
+        <h2 class="advantages__slogan">Коротко о нас:</h2>
+        <ul class="advantages__list options-list">
+          <li class="options-list__item options-list__item--eco">
+            <b class="options-list__title">Экологически чистые&nbsp;материалы</b>
+          </li>
+          <li class="options-list__item options-list__item--style">
+            <b class="options-list__title">Скандинавский стиль по российской цене</b>
+          </li>
+          <li class="options-list__item options-list__item--like">
+            <b class="options-list__title">Увеличивает лайки на&nbsp;фотографиях</b>
+          </li>
+          <li class="options-list__item options-list__item--love">
+            <b class="options-list__title">Связано вручную с любовью&nbsp;и&nbsp;умилением</b>
+          </li>
+          <li class="options-list__item options-list__item--nation">
+            <b class="options-list__title">Поддержка отечественного производителя</b>
+          </li>
+          <li class="options-list__item options-list__item--present">
+            <b class="options-list__title">Поставляется в подарочной&nbsp;упаковке</b>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="reviews reviews__container">
-      <h2 class="reviews__title">Отзывы</h2>
-      <div class="reviews-wrapper">
-        <blockquote class="reviews-wrapper__item">
-            Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-        </blockquote>
-        <cite class="reviews-wrapper__author-name">Анастасия Красильникова</cite>
-        <a class="reviews-wrapper__author-instagram" href="#">@misssssiskras</a>
-        <div class="reviews-toggle reviews-toggle__container">
-          <button class="reviews-toggle__previous" type="button"><span class="visually-hidden">Назад</span></button>
-          <button class="reviews-toggle__next" type="button"><span class="visually-hidden">Вперед</span></button>
+    <section class="reviews">
+      <div class="reviews-wrapper reviews-wrapper__container">
+        <h2 class="reviews-wrapper__title">Отзывы</h2>
+        <div class="reviews-wrapper__item reviews-item">
+          <p class="reviews-item__description">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="reviews-item__name">Анастасия Красильникова</p>
+          <a class="reviews-item__instagram" href="#">@misssssiskras</a>
+          <div class="reviews-item__toggle reviews-toggle">
+            <button class="reviews-toggle__previous" type="button"><span class="visually-hidden">Назад</span></button>
+            <button class="reviews-toggle__next" type="button"><span class="visually-hidden">Вперед</span></button>
+          </div>
         </div>
         <a class="reviews-wrapper__add" href="#">Написать</a>
       </div>
@@ -162,14 +163,14 @@
     <section class="contacts">
       <div class="contacts-details contacts__container">
         <h2 class="contacts-details__title">Контакты</h2>
-        <ul class="contacts-details__list">
-          <li class="contacts-details__item">
-            <span class="contacts-details__value">e-mail:</span>
-            <a class="contacts-details__email-to" href="#">info@mimimishkashop.ru</a>
+        <ul class="contacts-details__list details-list">
+          <li class="details-list__item">
+            <span class="details-list__value">e-mail:</span>
+            <a class="details-list__email-to" href="#">info@mimimishkashop.ru</a>
           </li>
-          <li class="contacts-details__item">
-            <span class="contacts-details__value">адрес:</span>
-            <span class="contacts-details__description">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+          <li class="details-list__item">
+            <span class="details-list__value">адрес:</span>
+            <span class="details-list__description">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</span>
           </li>
         </ul>
       </div>

@@ -89,6 +89,16 @@
   color: #63d1bb;
 }
 
+@mixin goods-status-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+  }
+  line-height: 17px;
+  color: #63d1bb;
+}
+
 @mixin table-text {
   font: {
     family: "Open Sans", "Arial", sans-serif;
@@ -185,6 +195,18 @@
   }
   line-height: 30px;
   color: #000000;
+  text-decoration: none;
+}
+
+@mixin contacts-list-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
   text-decoration: none;
 }
 

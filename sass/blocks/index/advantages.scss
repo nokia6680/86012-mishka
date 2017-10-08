@@ -1,3 +1,7 @@
+.advantages__container {
+  @include container;
+}
+
 .advantages {
   display: flex;
   flex-direction: column;
@@ -22,10 +26,13 @@
   padding-top: 80px;
 }
 
-.advantages__title {
-  @include advantage-title-text;
-}
+@media (min-width: $desctop-width) {
+  .advantages__slogan {
+    margin-left: 175px;
+  }
 
-.advantages__container {
-  @include container;
+  .advantages__list {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
 }
