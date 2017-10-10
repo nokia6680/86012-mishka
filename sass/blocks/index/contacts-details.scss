@@ -1,23 +1,34 @@
-.contacts__container {
-  @include container;
-}
-
-.contacts_details {
+.contacts-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .contacts-details__title {
-  margin: 0;
-  padding: 0;
-
   @include contacts-title-text;
 }
 
 .contacts-details__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .contacts-details__title {
+    @include intro-text-tablet;
+
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .contacts-details__title {
+    @include intro-text-desctop;
+
+    margin-top: 80px;
+    margin-bottom: 62px;
+  }
 }
