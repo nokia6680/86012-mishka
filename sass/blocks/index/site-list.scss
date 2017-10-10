@@ -12,10 +12,6 @@
   display: none;
 }
 
-.site-list__link-span {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .site-list--hide {
     display: flex;
@@ -31,7 +27,6 @@
 
   .site-list__item {
     padding-left: 0;
-    width: 167px;
     text-align: left;
   }
 
@@ -53,6 +48,7 @@
 
 @media (min-width: $desctop-width) {
   .site-list--hide {
+    width: 400px;
     display: flex;
     flex-direction: row;
     order: 1;
@@ -61,12 +57,12 @@
     padding: 0;
   }
 
-  .site-list__link-span {
-    display: none;
-  }
-
   .site-list__link {
     @include navi-text;
+  }
+
+  .site-list__item:first-child {
+    margin-right: 65px;
   }
 
 }

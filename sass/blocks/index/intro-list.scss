@@ -13,5 +13,10 @@
 
 .intro-list__link {
   @include under-navi-text;
+}
 
+@media (min-width: $desctop-width) {
+  .intro-list__item:first-child {
+    margin-right: 60px;
+  }
 }
