@@ -73,7 +73,6 @@
   .page-intro__slogan {
     @include intro-text-tablet;
   }
-
 }
 
 @media (min-width: $desctop-width) {
@@ -98,8 +97,7 @@
   .page-intro__slogan {
     @include intro-text-desctop;
 
-    margin-top: 75px;
-    margin: 75px auto 0 auto;
+    margin: 0 auto;
     width: 700px;
     text-align: center;
     order: 3;
