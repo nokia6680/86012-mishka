@@ -6,10 +6,12 @@
 
 .user-list__item {
   padding-left: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .user-list--hide {
-  display: none;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,8 +24,18 @@
     order: 1;
   }
 
+  .user-list__item {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+
   .user-list__item--search {
-    display: block;
+    display: none;
+  }
+
+  .main-nav__delivery {
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 }
 
@@ -33,6 +45,11 @@
     display: flex;
     flex-direction: row;
     order: 2;
+  }
+
+  .user-list__item {
+    padding-top: 33px;
+    padding-bottom: 33px;
   }
 
 }

@@ -31,6 +31,14 @@
   text-decoration: none;
 }
 
+.intro-list {
+  display: none;
+}
+
+.main-nav__delivery {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav__container {
     display: flex;
@@ -42,6 +50,31 @@
   .main-nav__toggle {
     display: none;
   }
+
+  .main-nav__logo {
+    order: 1;
+  }
+
+  .user-list {
+    width: 50%;
+    order: 2;
+    margin-left: auto;
+  }
+
+  .site-list {
+    @include under-navi-text;
+
+    order: 3;
+  }
+
+  .main-nav__delivery {
+    @include delivery-text;
+
+    display: block;
+    order: 4;
+    margin-left: auto;
+  }
+
 }
 
 @media (min-width: $desctop-width) {
@@ -52,7 +85,12 @@
     flex-wrap: wrap;
   }
 
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__logo {
+    margin-left: auto;
     order: 2;
   }
 
@@ -61,6 +99,7 @@
   }
 
   .user-list {
+    width: 400px;
     order: 3;
     margin-right: 0;
   }

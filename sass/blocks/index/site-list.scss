@@ -6,10 +6,12 @@
 
 .site-list__item {
   padding-left: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .site-list--hide {
-  display: none;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,21 +28,19 @@
   }
 
   .site-list__item {
+    width: 167px;
     padding-left: 0;
     text-align: left;
-  }
 
-  .site-list__link-span {
-    display: block;
-    align-self: flex-end;
-    margin-left: 103px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 
   .site-list__link {
     @include under-navi-text;
   }
 
-  .site-list__delivery {
+  .main-nav__delivery {
     @include delivery-text;
   }
 
@@ -55,6 +55,11 @@
 
     margin: 0;
     padding: 0;
+  }
+
+  .site-list__item {
+    padding-top: 33px;
+    padding-bottom: 33px;
   }
 
   .site-list__link {
