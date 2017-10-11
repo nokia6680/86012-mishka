@@ -16,11 +16,9 @@
 }
 
 @media (min-width: $desctop-width) {
-  .intro-list__item:first-child {
-    margin-right: 60px;
-  }
-
   .intro-list__item {
+    width: 220px;
+    text-align: left;
     padding-top: 22px;
     padding-bottom: 22px;
   }
