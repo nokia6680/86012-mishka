@@ -1,3 +1,24 @@
 .order-description__container {
   @include container;
 }
+
+.order-description__about {
+  @include form-intro-text;
+}
+
+@media (min-width: $tablet-width) {
+  .order-description__about {
+    @include form-intro-tablet;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .order-description__about {
+    @include form-intro-desktop;
+  }
+
+  .order-description {
+    padding-left: 225px;
+    padding-right: 175px;
+  }
+}

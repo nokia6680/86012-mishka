@@ -12,6 +12,13 @@
   padding-bottom: 75px;
 }
 
+.page-intro--order {
+  background: #f1f1f1 url() 0 0 no-repeat;
+
+  padding-bottom: 75px;
+  padding-top: 75px;
+}
+
 .page-intro__container {
   @include container;
 
@@ -25,6 +32,10 @@
 }
 
 .page-intro__slogan--catalog {
+  margin-bottom: 0;
+}
+
+.page-intro__slogan--order {
   margin-bottom: 0;
 }
 

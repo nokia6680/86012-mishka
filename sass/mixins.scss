@@ -234,6 +234,30 @@
   text-decoration: none;
 }
 
+@mixin form-intro-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin form-intro-desktop {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
 @mixin form-title-text {
   font: {
     family: "Open Sans", "Arial", sans-serif;
