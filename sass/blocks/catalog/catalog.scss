@@ -8,3 +8,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+
+@media (min-width: $desctop-width) {
+
+  .catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
