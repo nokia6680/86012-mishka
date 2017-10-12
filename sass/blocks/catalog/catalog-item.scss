@@ -1,16 +1,14 @@
-.catalog-item__name {
-  @include catalog-item-title;
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 30px;
+
+  border: 1px solid #ededed;
 }
 
-.catalog-item__name--link {
-  text-decoration: none;
-  color: #000000;
-}
-
-.catalog-item__details {
-  @include catalog-item-details;
-}
-
-.catalog-item__price {
-  @include catalog-item-price;
+.catalog-item__link {
+  font-size: 0;
+  line-height: 0;
 }

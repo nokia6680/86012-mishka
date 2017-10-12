@@ -1,0 +1,48 @@
+.item-info__name {
+  @include catalog-item-title;
+
+  @include marpad-null;
+
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.item-info__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.item-info__details {
+  @include catalog-item-details;
+}
+
+.item-info__price {
+  @include catalog-item-price;
+}
+
+.item-info {
+  padding-left: 28px;
+  padding-right: 27px;
+
+
+}
+
+.item-info__description {
+  padding-bottom: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #ededed;
+}
+
+.item-info__purchase {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

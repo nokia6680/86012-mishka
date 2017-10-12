@@ -1,11 +1,50 @@
 .videoreview__title {
   @include catalog-item-title;
+
+  padding-left: 90px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .videoreview__description {
   @include videoreview-description;
+  @include marpad-null;
+
+  padding-left: 35px;
 }
 
 .videoreview__container {
   @include container;
+}
+
+.videireview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.videoreview__wrapper {
+  border: 1px solid #ededed;
+  margin-top: 30px;
+  margin-bottom: 58px;
+}
+
+.videoreview__movie {
+  font-size: 0;
+  line-height: 0;
+
+  margin-bottom: 33px;
+}
+
+.videoreview__order {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  padding: 15px 24px 15px 24px;
+
+  border: 2px solid black;
+
+  margin-left: 35px;
+  margin-top: 28px;
+  margin-bottom: 33px;
 }

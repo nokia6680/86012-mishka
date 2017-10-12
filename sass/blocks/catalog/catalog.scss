@@ -1,3 +1,10 @@
 .catalog__container {
   @include container;
 }
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
