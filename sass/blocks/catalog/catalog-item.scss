@@ -12,3 +12,11 @@
   font-size: 0;
   line-height: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,5 +1,5 @@
 .videoreview__title {
-  @include catalog-item-title;
+  @include videoreview-title;
 
   padding-left: 90px;
   margin-top: 25px;
@@ -17,7 +17,7 @@
   @include container;
 }
 
-.videireview {
+.videireview__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -47,4 +47,41 @@
   margin-left: 35px;
   margin-top: 28px;
   margin-bottom: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .videoreview__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .videoreview__title {
+    @include videoreview-title-tab;
+
+    padding-left: 107px;
+    margin-top: 39px;
+    margin-bottom: 39px;
+
+    order: 2;
+  }
+
+  .videoreview__movie {
+    order: 1;
+  }
+
+  .videoreview__description {
+    @include videoreview-description-tab;
+
+    order: 3;
+    padding-left: 40px;
+    padding-right: 42px;
+  }
+
+  .videoreview__order {
+    order: 4;
+    margin-left: 40px;
+    margin-right: 42px;
+    margin-bottom: 46px;
+  }
 }
