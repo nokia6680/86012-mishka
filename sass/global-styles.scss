@@ -23,6 +23,9 @@ body {
   @include global-text;
   min-width: 320px;
   background-color: $bg-white;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000; 
 }
 
 img {

@@ -13,6 +13,8 @@
 
 .intro-list__link {
   @include under-navi-text;
+
+  text-decoration: none;
 }
 
 @media (min-width: $desctop-width) {

@@ -13,9 +13,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-
-    @include container;
-
     position: relative;
   }
 }
@@ -26,9 +23,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-
-    @include container;
-
     position: relative;
   }
 }

@@ -35,6 +35,9 @@
 }
 
 .videoreview__order {
+  @include page-button-text;
+
+  width: 188px;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -42,7 +45,7 @@
 
   border: 2px solid black;
 
-  margin-left: 35px;
+  margin-left: 33px;
   margin-top: 28px;
   margin-bottom: 33px;
 }
@@ -77,6 +80,9 @@
   }
 
   .videoreview__order {
+    @include page-button-text;
+
+    width: 580px;
     order: 4;
     margin-left: 40px;
     margin-right: 42px;
@@ -132,6 +138,8 @@
 
   .videoreview__order {
     @include page-button-text;
+
+    width: 226px;
 
     padding-left: 44px;
     padding-right: 44px;

@@ -25,6 +25,12 @@
 }
 
 @media (min-width: $desctop-width) {
+  .contacts-details {
+    margin-left: 175px;
+    width: 350px;
+    padding: 0;
+  }
+
   .contacts-details__title {
     @include intro-text-desctop;
 
