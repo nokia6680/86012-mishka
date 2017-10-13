@@ -1,3 +1,7 @@
+.videoreview {
+  @include container;
+}
+
 .videoreview__title {
   @include videoreview-title;
 
@@ -13,17 +17,11 @@
   padding-left: 35px;
 }
 
-.videoreview__container {
-  @include container;
-}
-
-.videireview__wrapper {
+.videoreview__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
 
-.videoreview__wrapper {
   border: 1px solid #ededed;
   margin-top: 30px;
   margin-bottom: 58px;
@@ -83,5 +81,63 @@
     margin-left: 40px;
     margin-right: 42px;
     margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .videoreview {
+    position: relative;
+  }
+
+  .videoreview__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-left: auto;
+  }
+
+  .videoreview__movie {
+    position: absolute;
+
+    left: 50px;
+    top: 0;
+
+    margin-right: 17px;
+  }
+
+  .videoreview__title {
+    @include videoreview-title-tab;
+
+    width: 350px;
+
+    padding-left: 60px;
+    padding-right: 58px;
+    padding-top: 98px;
+
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 34px;
+  }
+
+  .videoreview__description {
+    @include videoreview-description-tab;
+
+    width: 350px;
+    margin-left: auto;
+    padding-left: 60px;
+    padding-right: 58px;
+  }
+
+  .videoreview__order {
+    @include page-button-text;
+
+    padding-left: 44px;
+    padding-right: 44px;
+
+    margin-left: auto;
+    margin-right: 65px;
+    margin-bottom: 60px;
   }
 }
