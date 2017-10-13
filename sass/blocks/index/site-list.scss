@@ -5,14 +5,14 @@
 }
 
 .site-list__item {
-  width: 260px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 45px;
+  text-align: left;
 }
 
 .site-list--hide {
-  display: block;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
