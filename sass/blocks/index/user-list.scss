@@ -5,13 +5,14 @@
 }
 
 .user-list__item {
+  width: 260px;
   padding-left: 45px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .user-list--hide {
-  display: none;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,10 +28,17 @@
   .user-list__item {
     padding-top: 33px;
     padding-bottom: 33px;
+    width: 264px;
+    text-align: right;
   }
 
   .user-list__item--search {
     display: none;
+    width: 83px;
+  }
+
+  .user-list__item--cart {
+    padding-right: 0;
   }
 
   .main-nav__delivery {

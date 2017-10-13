@@ -5,6 +5,13 @@
   align-items: center;
 }
 
-.order-form__item--gray {
-  background-color: #f1f1f1;
+.order-description {
+  @include container;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }

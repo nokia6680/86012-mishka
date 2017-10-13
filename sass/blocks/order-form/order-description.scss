@@ -1,7 +1,3 @@
-.order-description__container {
-  @include container;
-}
-
 .order-description__about {
   @include form-intro-text;
 }

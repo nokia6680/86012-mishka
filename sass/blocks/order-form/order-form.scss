@@ -2,23 +2,12 @@
   @include container;
 }
 
-.order-button__container {
-  @include container;
-}
-
-
-.order-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .order-form__item {
   padding-top: 33px;
   padding-bottom: 33px;
 }
 
-.order-button {
+.order-form__submit {
   width: 260px;
   margin: 0;
 
@@ -31,6 +20,11 @@
     padding-bottom: 50px;
   }
 
+  .order-form__item--gray {
+    background-color: #f1f1f1;
+  }
+
+
   .order-form__item--textarea {
     display: flex;
     flex-direction: row;
@@ -38,7 +32,7 @@
     align-items: flex-end;
   }
 
-  .form-item__book {
+  .order-form__book {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,13 +45,17 @@
     text-align: right;
   }
 
-  .order-button {
+  .order-form__submit {
     order: 1;
   }
 }
 
 @media (min-width: $desctop-width) {
-  .form-item__book {
+  .order-form__item--gray {
+    background-color: #f1f1f1;
+  }
+
+  .order-form__book {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -73,7 +71,7 @@
     text-align: right;
   }
 
-  .order-button {
+  .order-form__submit {
     order: 1;
   }
 
