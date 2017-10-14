@@ -1,7 +1,151 @@
+.videoreview {
+  @include container;
+}
+
 .videoreview__title {
-  @include catalog-item-title;
+  @include videoreview-title;
+
+  padding-left: 90px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .videoreview__description {
   @include videoreview-description;
+  @include marpad-null;
+
+  padding-left: 35px;
+}
+
+.videoreview__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 1px solid #ededed;
+  margin-top: 30px;
+  margin-bottom: 58px;
+}
+
+.videoreview__movie {
+  font-size: 0;
+  line-height: 0;
+
+  margin-bottom: 33px;
+}
+
+.videoreview__order {
+  @include page-button-text;
+
+  width: 188px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  padding: 15px 24px 15px 24px;
+
+  border: 2px solid black;
+
+  margin-left: 33px;
+  margin-top: 28px;
+  margin-bottom: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .videoreview__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .videoreview__title {
+    @include videoreview-title-tab;
+
+    padding-left: 107px;
+    margin-top: 39px;
+    margin-bottom: 39px;
+
+    order: 2;
+  }
+
+  .videoreview__movie {
+    order: 1;
+  }
+
+  .videoreview__description {
+    @include videoreview-description-tab;
+
+    order: 3;
+    padding-left: 40px;
+    padding-right: 42px;
+  }
+
+  .videoreview__order {
+    @include page-button-text;
+
+    width: 580px;
+    order: 4;
+    margin-left: 40px;
+    margin-right: 42px;
+    margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .videoreview {
+    position: relative;
+  }
+
+  .videoreview__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-left: auto;
+  }
+
+  .videoreview__movie {
+    position: absolute;
+
+    left: 50px;
+    top: 0;
+
+    margin-right: 17px;
+  }
+
+  .videoreview__title {
+    @include videoreview-title-tab;
+
+    width: 350px;
+
+    padding-left: 60px;
+    padding-right: 58px;
+    padding-top: 98px;
+
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 34px;
+  }
+
+  .videoreview__description {
+    @include videoreview-description-tab;
+
+    width: 350px;
+    margin-left: auto;
+    padding-left: 60px;
+    padding-right: 58px;
+  }
+
+  .videoreview__order {
+    @include page-button-text;
+
+    width: 226px;
+
+    padding-left: 44px;
+    padding-right: 44px;
+
+    margin-left: auto;
+    margin-right: 65px;
+    margin-bottom: 60px;
+  }
 }

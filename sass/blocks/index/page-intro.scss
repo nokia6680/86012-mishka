@@ -1,12 +1,99 @@
 .page-intro {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
+
+  text-align: center;
+}
+
+.page-intro--catalog {
+  background: #f1f1f1 url() 0 0 no-repeat;
+
+  padding-bottom: 75px;
+  padding-top: 75px;
+}
+
+.page-intro--order {
+  background: #f1f1f1 url() 0 0 no-repeat;
+
+  padding-bottom: 75px;
+  padding-top: 75px;
+}
+
+.page-intro__container {
+  @include container;
 }
 
 .page-intro__slogan {
+  @include marpad-null;
+  @include intro-text;
+
+  margin-bottom: 137px;
+}
+
+.page-intro__slogan--catalog {
+  margin-bottom: 0;
+}
+
+.page-intro__slogan--order {
+  margin-bottom: 0;
+}
+
+.page-intro__list {
+  display: none;
+  list-style: none;
   margin: 0;
   padding: 0;
+}
 
-  @include intro-text;
+.page-intro__delivery {
+  @include delivery-text;
+
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .page-intro__slogan {
+    @include intro-text-tablet;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .page-intro__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .page-intro__list {
+    display: flex;
+    flex-direction: row;
+    order: 1;
+  }
+  .page-intro__slogan {
+    @include intro-text-desctop;
+
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    order: 3;
+  }
+
+  .page-intro__delivery {
+    display: block;
+    order: 2;
+  }
 }

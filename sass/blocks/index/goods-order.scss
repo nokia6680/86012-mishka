@@ -1,7 +1,27 @@
+.goods-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .goods-order__price {
   @include goods-price-text;
 }
 
 .goods-order__book {
   @include goods-order-text;
+}
+
+
+@media (min-width: $tablet-width) {
+  .goods-order__price {
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .goods-order__price {
+    margin-bottom: 34px;
+  }
 }

@@ -1,0 +1,87 @@
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviews-item__description {
+  @include review-description-text;
+}
+
+.reviews-item__name {
+  @include author-name-text;
+}
+
+.reviews-item__instagram {
+  @include author-instagram-text;
+}
+
+@media (min-width: $tablet-width) {
+  .review-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .reviews-item__description {
+    width: 100%;
+    order: 1;
+  }
+
+  .reviews-item__name {
+    width: 260px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    order: 2;
+  }
+
+  .reviews-item__instagram {
+    width: 167px;
+    margin-left: 0;
+    order: 4;
+  }
+
+  .reviews-item__toggle {
+    width: 167px;
+    margin-left: auto;
+    order: 3;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .review-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .reviews-item__description {
+    width: 100%;
+    order: 1;
+  }
+
+  .reviews-item__name {
+    width: 260px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    order: 2;
+  }
+
+  .reviews-item__instagram {
+    width: 175px;
+    margin-left: 0;
+    order: 4;
+  }
+
+  .reviews-item__toggle {
+    width: 175px;
+    margin-left: auto;
+    order: 3;
+  }
+}

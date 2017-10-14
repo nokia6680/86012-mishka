@@ -17,6 +17,17 @@
   line-height: 24px;
   color: #000000;
 }
+
+@mixin under-navi-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: bold;
+  }
+  line-height: 24px;
+  color: #000000;
+}
+
 /*Цвет текста интро*/
 @mixin intro-text {
   font: {
@@ -25,6 +36,26 @@
     weight: bold;
   }
   line-height: 30px;
+  color: #000000;
+}
+
+@mixin intro-text-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 43px;
+    weight: bold;
+  }
+  line-height: 50px;
+  color: #000000;
+}
+
+@mixin intro-text-desctop {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 53px;
+    weight: bold;
+  }
+  line-height: 57px;
   color: #000000;
 }
 /*Цвет текста зеленых кнопок*/
@@ -57,6 +88,27 @@
   line-height: 20px;
   color: #63d1bb;
 }
+
+@mixin goods-status-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+  }
+  line-height: 17px;
+  color: #63d1bb;
+}
+
+@mixin table-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: normal;
+  }
+  line-height: 20px;
+  color: #444444;
+}
+
 /*Цвет текста цены товара в карточке на главной*/
 @mixin goods-price-text {
   font: {
@@ -146,6 +198,18 @@
   text-decoration: none;
 }
 
+@mixin contacts-list-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
 @mixin copyright-text {
   font: {
     family: "Open Sans", "Arial", sans-serif;
@@ -166,6 +230,30 @@
     style: normal;
   }
   line-height: 24px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin form-intro-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin form-intro-desktop {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
   color: #444444;
   text-decoration: none;
 }
@@ -209,7 +297,7 @@
   font: {
     family: "Open Sans", "Arial", sans-serif;
     size: 17px;
-    weight: bold;
+    weight: normal;
   }
   line-height: 17px;
   color: #444444;
@@ -257,6 +345,30 @@
   text-decoration: none;
 }
 
+@mixin videoreview-title {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin videoreview-title-tab {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 20px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
 @mixin videoreview-description {
   font: {
     family: "Open Sans", "Arial", sans-serif;
@@ -267,4 +379,55 @@
   line-height: 24px;
   color: #444444;
   text-decoration: none;
+}
+
+@mixin videoreview-description-tab {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin delivery-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+}
+
+@mixin button {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  padding: 15px 40px 15px 40px;
+
+  border: 2px solid black;
 }

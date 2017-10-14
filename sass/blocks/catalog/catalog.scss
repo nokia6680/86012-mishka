@@ -1,0 +1,21 @@
+.catalog__container {
+  @include container;
+}
+
+.catalog__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+@media (min-width: $desctop-width) {
+
+  .catalog__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

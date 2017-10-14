@@ -1,6 +1,28 @@
 .goods-card {
+  @include container;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .goods-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
 }

@@ -1,0 +1,64 @@
+.options-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.options-list__item {
+  @include advantage-title-text;
+
+  margin-top: 58px;
+  margin-bottom: 30px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .options-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .options-list__item {
+    width: 291px;
+
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+
+  .options-list__item--eco {
+    order: 1;
+  }
+
+  .options-list__item--style {
+    order: 3;
+  }
+
+  .options-list__item--like {
+    order: 5;
+  }
+
+  .options-list__item--love {
+    order: 2;
+  }
+
+  .options-list__item--nation {
+    order: 4;
+  }
+
+  .options-list__item--present {
+    order: 6;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .options-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+}

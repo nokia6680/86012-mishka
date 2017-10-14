@@ -1,21 +1,40 @@
-.contacts-details__title {
-  margin: 0;
-  padding: 0;
+.contacts-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
+.contacts-details__title {
   @include contacts-title-text;
 }
 
 .contacts-details__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-.contacts-details__item {
-  @include review-description-text;
+
+@media (min-width: $tablet-width) {
+  .contacts-details__title {
+    @include intro-text-tablet;
+
+    margin-bottom: 62px;
+  }
 }
 
-.contacts-details__email-to,
-.contacts-details__send-us {
-  @include review-description-text;
+@media (min-width: $desctop-width) {
+  .contacts-details {
+    margin-left: 175px;
+    width: 350px;
+    padding: 0;
+  }
+
+  .contacts-details__title {
+    @include intro-text-desctop;
+
+    margin-top: 80px;
+    margin-bottom: 62px;
+  }
 }

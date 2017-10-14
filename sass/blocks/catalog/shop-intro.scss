@@ -6,3 +6,8 @@
   @include marpad-null;
   @include intro-text;
 }
+
+
+.shop-intro__container {
+  @include container;
+}

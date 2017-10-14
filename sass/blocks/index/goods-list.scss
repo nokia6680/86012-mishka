@@ -1,4 +1,14 @@
-.goods-list__parameter,
+.goods-list__item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.goods-list__parameter {
+  @include table-text;
+
+  min-width: 98px;
+}
+
 .goods-list__value {
-  @include global-text;
+  @include table-text;
 }

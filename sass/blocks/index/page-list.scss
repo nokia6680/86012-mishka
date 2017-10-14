@@ -1,0 +1,73 @@
+.page-list__link--container {
+  @include container;
+}
+
+.page-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+}
+
+.page-list__item--interior {
+  background-color: $bg-green;
+  text-align: left;
+}
+
+.page-list__item--toys {
+  background-color: $bg-darkgreen;
+  text-align: left;
+}
+
+.page-list__link {
+  text-decoration: none;
+
+  @include goods-text;
+
+  padding-right: 130px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  display: block;
+  height: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .page-list {
+    @include container;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .page-list__item {
+    width: 100%;
+  }
+
+  .page-list__link {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-list {
+    @include container;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .page-list__item {
+    width: 100%;
+  }
+
+  .page-list__link {
+    width: 100%;
+    margin-left: 0;
+  }
+}
