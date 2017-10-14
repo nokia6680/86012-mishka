@@ -5,10 +5,21 @@
   align-items: flex-start;
 }
 
+.reviews-wrapper__title {
+  @include review-title-text;
+
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+
 .reviews-wrapper__add {
   @include reviews-add-text;
+  @include button;
 
+  width: 260px;
   align-self: center;
+
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,15 +30,31 @@
   }
 
   .reviews-wrapper__title {
+    @include review-title-tablet;
+
+    margin-bottom: 0;
+    margin-top: 81px;
     order: 1;
   }
 
   .reviews-wrapper__item {
     order: 3;
+    position: relative;
+    margin-top: 48px;
   }
 
   .reviews-wrapper__add {
+    @include button;
+
+    align-self: center;
     order: 2;
+
+    padding-left: 39px;
+    padding-right: 39px;
+
+    width: 175px;
+
+    margin-top: 78px;
   }
 }
 

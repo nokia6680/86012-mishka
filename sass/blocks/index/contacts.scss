@@ -24,6 +24,7 @@
 
 .contacts-details__send-us {
   @include button;
+  @include goods-order-text;
 
   margin-top: 39px;
   margin-bottom: 39px;

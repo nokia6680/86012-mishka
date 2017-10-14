@@ -139,6 +139,29 @@
   line-height: 20px;
   color: #000000;
 }
+/*Текст заголовка секции ОТЗЫВЫ*/
+@mixin review-title-text {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 25px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #000000;
+}
+
+@mixin review-title-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 43px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 50px;
+  color: #000000;
+}
+
 /*Текст отзыва*/
 @mixin review-description-text {
   font: {
@@ -177,7 +200,7 @@
 @mixin reviews-add-text {
   font: {
     family: "Open Sans", "Arial", sans-serif;
-    size: 18px;
+    size: 17px;
     weight: bold;
     style: normal;
   }
