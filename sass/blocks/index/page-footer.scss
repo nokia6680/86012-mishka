@@ -19,6 +19,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    margin-top: 58px;
+  }
+
   .page-footer__wrapper {
     display: flex;
     flex-direction: row;
