@@ -3,7 +3,6 @@
 
   @include marpad-null;
 
-  padding-top: 28px;
   padding-bottom: 10px;
 }
 
@@ -30,14 +29,14 @@
 }
 
 .item-info__description {
-  padding-bottom: 25px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .item-info__purchase {
+  margin-top: 25px;
+
   padding-top: 25px;
   padding-bottom: 25px;
   padding-right: 20px;
@@ -51,16 +50,23 @@
 
 @media (min-width: $tablet-width) {
   .item-info {
-    width: 50%;
+    width: 332px;
+    padding-top: 28px;
   }
 }
 
 @media (min-width: $desctop-width) {
   .item-info {
     width: 100%;
-
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  .item-info__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

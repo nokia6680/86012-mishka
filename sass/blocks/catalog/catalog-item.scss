@@ -11,13 +11,25 @@
 .catalog-item__link {
   font-size: 0;
   line-height: 0;
+
+  margin-bottom: 30px;
+}
+
+.catalog-item__image {
+  font-size: 0;
+  line-height: 0;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-item {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .catalog-item__link {
+    margin: 0;
   }
 }
 
@@ -29,5 +41,18 @@
     flex-wrap: wrap;
 
     width: 315px;
+
+    margin-top: 129px;
+  }
+
+  .catalog-item__image {
+    font-size: 0;
+    line-height: 0;
+
+    margin-bottom: 28px;
+  }
+
+  .catalog-item__link {
+    margin: 0;
   }
 }
