@@ -6,14 +6,27 @@
 
 .reviews-item__description {
   @include review-description-text;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .reviews-item__name {
   @include author-name-text;
+
+  margin-top: 31px;
+  margin-bottom: 0;
 }
 
 .reviews-item__instagram {
   @include author-instagram-text;
+
+  margin-top: 7px;
+  margin-bottom: 29px;
+}
+
+.reviews-item__toggle {
+  margin-bottom: 38px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,9 +43,9 @@
   }
 
   .reviews-item__name {
-    width: 260px;
-
-    margin-top: 0;
+    width: 100%;
+    text-align: left;
+    margin-top: 62px;
     margin-bottom: 0;
     margin-left: 0;
     order: 2;
@@ -41,13 +54,22 @@
   .reviews-item__instagram {
     width: 167px;
     margin-left: 0;
-    order: 4;
+    order: 3;
+
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .reviews-item__toggle {
     width: 167px;
     margin-left: auto;
-    order: 3;
+    order: 4;
+
+    margin-bottom: 0;
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
   }
 }
 

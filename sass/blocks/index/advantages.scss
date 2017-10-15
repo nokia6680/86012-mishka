@@ -7,6 +7,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
+
+  margin-bottom: 30px;
 }
 
 .advantages__slogan {
@@ -20,10 +22,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.advantages__item {
-  padding-top: 80px;
 }
 
 @media (min-width: $desctop-width) {

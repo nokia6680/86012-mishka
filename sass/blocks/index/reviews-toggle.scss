@@ -4,3 +4,20 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.reviews-toggle__previous {
+  height: 50px;
+  border: 1px solid #ececec;
+  border-right: none;
+  width: 130px;
+
+  background-color: transparent;
+}
+
+.reviews-toggle__next {
+  height: 50px;
+  border: 1px solid #ececec;
+  width: 130px;
+
+  background-color: transparent;
+}
