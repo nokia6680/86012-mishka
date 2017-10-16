@@ -3,7 +3,6 @@
 
   @include marpad-null;
 
-  padding-bottom: 10px;
 }
 
 .item-info__link {
@@ -34,39 +33,48 @@
   justify-content: space-between;
 }
 
-.item-info__purchase {
-  margin-top: 25px;
+.item-info__details {
+  margin-bottom: 25px;
+}
 
-  padding-top: 25px;
-  padding-bottom: 25px;
+.item-info__purchase {
   padding-right: 20px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  border-top: 1px solid #ededed;
 }
 
 @media (min-width: $tablet-width) {
   .item-info {
     width: 332px;
     padding-top: 28px;
+    padding-bottom: 28px;
   }
 }
 
 @media (min-width: $desctop-width) {
   .item-info {
     width: 100%;
-    padding-top: 0;
+    margin-top: 28px;
+    padding-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  .item-info__details {
+    margin-bottom: 35px;
   }
 
   .item-info__description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .item-info__purchase {
+    width: auto;
+    margin-top: auto;
   }
 }

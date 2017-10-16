@@ -7,11 +7,82 @@
 .form-list__item {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 62px;
 }
 
 .form-list__item--name {
   padding-left: 0;
+}
+
+.form-list__input--radio + label {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+
+  position: relative;
+  padding-left: 62px;
+}
+
+.form-list__input--radio + label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  display: block;
+  width: 39px;
+  height: 39px;
+  border: 3px solid #444444;
+  border-radius: 50%;
+}
+
+.form-list__input--radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #62d1ba;
+}
+
+.form-list__input--checkbox + label {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+
+  position: relative;
+  padding-left: 62px;
+}
+
+.form-list__input--checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  display: block;
+  width: 40px;
+  height: 39px;
+  border: 2px solid #444444;
+}
+
+.form-list__input--checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  display: block;
+  width: 22px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='22px' height='16px' viewBox='0 0 32.666 22.742' enable-background='new 0 0 32.666 22.742' xml:space='preserve'%3E%3Cpolygon points='32.666,1.414 31.252,0 11.338,19.914 1.414,9.989 0,11.403 9.924,21.328 9.924,21.328 11.338,22.742 11.338,22.742 11.339,22.742 12.753,21.328 12.752,21.328 '/%3E%3C/svg%3E%0A");
+}
+
+.form-list__item--color {
+  margin-bottom: 22px;
+}
+
+.form-list__item--color:last-child {
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,7 +94,7 @@
   .form-list__item {
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 79px;
+    padding-left: 82px;
   }
 
   .form-list__item--name {

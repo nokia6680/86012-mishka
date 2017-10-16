@@ -41,15 +41,14 @@
     flex-wrap: wrap;
 
     width: 315px;
-
+    height: 100%;
     margin-top: 129px;
   }
 
   .catalog-item__image {
     font-size: 0;
     line-height: 0;
-
-    margin-bottom: 28px;
+    margin-bottom: 0;
   }
 
   .catalog-item__link {

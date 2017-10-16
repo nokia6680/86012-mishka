@@ -2,9 +2,11 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: center -18px;
   background-repeat: no-repeat;
-  background-size: 575px 373px;
+  background-size: 575px auto;
 
   text-align: center;
+
+  border-top: 1px solid #e7e7e7;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -70,7 +72,7 @@
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1150px 746px;
+    background-size: 1150px auto;
 
     text-align: center;
 
@@ -99,6 +101,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-intro {
+      margin-top: -65px;
+      border-top: 1px solid #e7e7e7;
+  }
+
   .page-intro--catalog {
     background: #f1f1f1 url() 0 0 no-repeat;
 
@@ -128,22 +135,20 @@
     flex-direction: column;
     justify-content: space-between;
 
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
     background-position: center -64px;
-    background-size: cover;
-  }
+    background-size: 1150px auto;
 
-  .page-intro--catalog {
-    background: #f1f1f1 url() 0 0 no-repeat;
+    text-align: center;
+    margin-top: -65px;
 
-    padding-bottom: 75px;
-    padding-top: 75px;
-  }
+    border-top: none;
 
-  .page-intro--order {
-    background: #f1f1f1 url() 0 0 no-repeat;
-
-    padding-bottom: 75px;
-    padding-top: 75px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 2300px auto;
+    }
   }
 
   .page-intro__container {
@@ -151,6 +156,8 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    border-top: 1px solid #e7e7e7;
   }
 
   .page-intro__list {
@@ -183,5 +190,29 @@
   .page-intro__slogan--order {
     margin: 0 auto;
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi),
+       (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .page-intro {
+    background-image: url("../img/hero-desktop@2x.jpg");
+    background-size: 2300px auto;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-intro--catalog {
+    background: #f1f1f1 url() 0 0 no-repeat;
+
+    padding-bottom: 75px;
+    padding-top: 75px;
+  }
+
+  .page-intro--order {
+    background: #f1f1f1 url() 0 0 no-repeat;
+
+    padding-bottom: 75px;
+    padding-top: 75px;
   }
 }
