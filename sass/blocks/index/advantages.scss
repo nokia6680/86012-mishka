@@ -8,7 +8,9 @@
   justify-content: space-between;
   align-content: center;
 
-  margin-bottom: 30px;
+  padding-top: 40px;
+
+  @include curve-line-mobile;
 }
 
 .advantages__slogan {
@@ -24,7 +26,20 @@
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding-top: 74px;
+
+    @include curve-line-tablet;
+  }
+}
+
 @media (min-width: $desctop-width) {
+  .advantages {
+    padding-top: 91px;
+
+    @include curve-line-desktop;
+  }
   .advantages__slogan {
     margin-left: 175px;
   }

@@ -64,11 +64,11 @@
       <div class="order-form__item form-item order-form__container">
         <h2 class="form-item__legend">Тип</h2>
         <ul class="form-item__list form-list form-list--type">
-          <li class="form-list__item">
+          <li class="form-list__item form-list__item--type">
             <input class="visually-hidden form-list__input form-list__input--radio"type="radio" name="type" value="Аксессуар для интерьера" id="accs">
             <label for="accs">Аксессуар для интерьера</label>
           </li>
-          <li class="form-list__item">
+          <li class="form-list__item form-list__item--type">
             <input class="visually-hidden form-list__input form-list__input--radio"type="radio" name="type" value="Детская игрушка" id="toys">
             <label for="toys">Детская игрушка</label>
           </li>
@@ -112,15 +112,15 @@
         <ul class="form-item__list form-list form-item__list--details">
           <li class="form-list__item form-list__item--name">
             <label for="name">Имя:</label>
-            <input type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
+            <input class="form-list__input form-list__input--text" type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
           </li>
           <li class="form-list__item form-list__item--name">
             <label for="surname">Фамилия:</label>
-            <input type="text" name="surname" placeholder="Введите вашу фамилию*" id="surname" required>
+            <input class="form-list__input form-list__input--text" type="text" name="surname" placeholder="Введите вашу фамилию*" id="surname" required>
           </li>
           <li class="form-list__item form-list__item--name">
             <label for="fathername">Отчество:</label>
-            <input type="text" name="fathername" placeholder="Отчество, если желаете" id="fathername">
+            <input class="form-list__input form-list__input--text" type="text" name="fathername" placeholder="Отчество, если желаете" id="fathername">
           </li>
         </ul>
       </div>
@@ -128,15 +128,15 @@
       <div class="order-form__item form-item order-form__item--gray">
         <div class="form-item__contact order-form__container">
           <h2 class="form-item__legend">Тел</h2>
-          <input type="tel" name="tel" placeholder="+7-XXX-XX-XX*" id="tel" required/>
+          <input class="form-list__input form-list__input--tel" type="tel" name="tel" placeholder="+7-XXX-XX-XX*" id="tel" required/>
           <span class="order-form__icon"></span>
         </div>
       </div>
 
       <div class="order-form__item form-item order-form__item--gray">
         <div class="form-item__contact order-form__container">
-          <h2 class="form-item__legend">e-mail</h2>
-          <input type="email" name="email" placeholder="Ваш Email*" id="email" required>
+          <h2 class="form-item__legend form-item__legend--email">e-mail</h2>
+          <input class="form-list__input form-list__input--email" type="email" name="email" placeholder="Ваш Email*" id="email" required>
           <span class="order-form__icon"></span>
         </div>
       </div>

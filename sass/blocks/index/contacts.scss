@@ -68,7 +68,7 @@
   }
 
   .contacts-details__send-us {
-    margin: 55px auto 0 auto;
+    margin: 55px auto 57px auto;
   }
 }
 
@@ -90,6 +90,8 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
+
+    margin-bottom: 58px;
   }
 
   .contacts__map {
@@ -110,6 +112,7 @@
     position: absolute;
     bottom: 0;
     margin-left: 175px;
+    margin-bottom: 0;
   }
 }
 

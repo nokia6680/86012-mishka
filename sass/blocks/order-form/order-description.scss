@@ -1,16 +1,25 @@
 .order-description__about {
   @include form-intro-text;
+
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .order-description__about {
     @include form-intro-tablet;
+
+    margin-top: 60px;
+    margin-bottom: 10px;
   }
 }
 
 @media (min-width: $desctop-width) {
   .order-description__about {
     @include form-intro-desktop;
+
+    margin-top: 120px;
+    margin-bottom: 10px;
   }
 
   .order-description {

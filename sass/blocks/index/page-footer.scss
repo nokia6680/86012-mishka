@@ -19,10 +19,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    margin-top: 58px;
-  }
-
   .page-footer__wrapper {
     display: flex;
     flex-direction: row;
@@ -36,10 +32,6 @@
 }
 
 @media (min-width: $desctop-width) {
-  .page-footer {
-    margin-top: 105px;
-  }
-
   .page-footer__wrapper {
     display: flex;
     flex-direction: row;

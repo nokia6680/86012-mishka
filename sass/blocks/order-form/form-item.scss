@@ -8,7 +8,20 @@
   @include form-title-text;
   @include marpad-null;
 
-  padding-bottom: 25px;
+  margin-bottom: 25px;
+  padding-right: 200px;
+
+  position: relative;
+}
+
+.form-item__legend::after {
+  @include green-line-pseudo;
+}
+
+.form-item__legend--email::after {
+  @include green-line-pseudo;
+  width: 70%;
+  left: 81px;
 }
 
 .form-item__list {
@@ -39,7 +52,6 @@
 .order-form__description {
   @include form-required-text;
 
-  margin-bottom: 30px;
 }
 
 
@@ -53,6 +65,11 @@
 
   .form-item__legend {
     width: 167px;
+    padding-right: 0;
+  }
+
+  .form-item__legend::after {
+    display: none;
   }
 
   .form-item__contact {
@@ -85,6 +102,11 @@
     width: 175px;
     text-align: left;
     padding-left: 60px;
+    padding-right: 0;
+  }
+
+  .form-item__legend::after {
+    display: none;
   }
 
   .form-item__wrapper {

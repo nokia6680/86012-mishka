@@ -41,6 +41,14 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    position: relative;
+  }
+
+  .page-list::after {
+    @include curve-figure;
+
+    left: 0;
+    height: 15px;
   }
 
   .page-list__item {
@@ -60,6 +68,15 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+
+    position: relative;
+  }
+
+  .page-list::after {
+    @include curve-figure;
+
+    left: 0px;
+    height: 17px;
   }
 
   .page-list__item {
@@ -69,5 +86,11 @@
   .page-list__link {
     width: 100%;
     margin-left: 0;
+
+    display: block;
+    height: 100%;
+
+    padding-right: 350px;
+    padding-left: 37px;
   }
 }
