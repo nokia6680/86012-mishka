@@ -114,11 +114,13 @@
   .form-list__input--text {
     margin-left: 25px;
     width: 100%;
+    padding-left: 18px;
   }
 
   .form-list__input--tel,
   .form-list__input--email {
     max-width: 500px;
+    padding-left: 18px;
   }
 
   .form-list--color {

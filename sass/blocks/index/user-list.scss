@@ -5,14 +5,23 @@
 }
 
 .user-list__item {
-  padding-left: 45px;
+  padding-left: 75px;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 63px;
   text-align: left;
+
+  border-top: 1px solid #ececec;
 }
 
 .user-list--hide {
   display: none;
+}
+
+.user-list__link {
+  display: block;
+  margin: 0 auto;
+  width: 182px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,6 +39,12 @@
     padding-bottom: 33px;
     width: 264px;
     text-align: right;
+
+    border-top: none;
+  }
+
+  .user-list__link {
+    width: 100%;
   }
 
   .user-list__item--search {
@@ -58,6 +73,8 @@
   .user-list__item {
     padding-top: 33px;
     padding-bottom: 33px;
+
+    border-top: none;
   }
 
 }
