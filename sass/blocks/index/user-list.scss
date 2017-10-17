@@ -32,11 +32,14 @@
     flex-wrap: wrap;
     align-items: center;
     order: 1;
+
+    width: 350px;
   }
 
-  .user-list__item {
+  .user-list__item--cart {
     padding-top: 33px;
     padding-bottom: 33px;
+    padding-right: 0;
     width: 264px;
     text-align: right;
 
@@ -48,8 +51,22 @@
   }
 
   .user-list__item--search {
+    width: 82px;
+
+    border-top: none;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+
+    padding: 0;
+
+    padding-top: 20px;
+    padding-bottom: 33px;
+    padding-left: 33px;
+    padding-right: 31px;
+  }
+
+  .user-list__link--search {
     display: none;
-    width: 83px;
   }
 
   .user-list__item--cart {
