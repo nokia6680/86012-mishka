@@ -37,3 +37,29 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+
+  .social__list {
+    width: 142px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .social__item {
+    margin-right: 40px;
+  }
+
+  .social__item:last-child {
+    margin-right: 0;
+  }
+}

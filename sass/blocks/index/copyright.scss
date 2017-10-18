@@ -17,9 +17,17 @@
 .copyright__text {
   @include copyright-text;
 
-  margin-right: 30px;
+  margin-right: 29px;
 }
 
 .copyright__icon {
   fill: #63d1bb;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

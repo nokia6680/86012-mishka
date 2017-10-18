@@ -25,7 +25,15 @@
 
   .page-footer__logo {
     display: block;
+
   }
+
+  .page-footer__social {
+
+    margin-right: 84px;
+    margin-left: 159px;
+  }
+
 }
 
 @media (min-width: $desctop-width) {

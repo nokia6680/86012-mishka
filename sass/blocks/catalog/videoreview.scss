@@ -104,6 +104,13 @@
 
   .videoreview__movie {
     order: 1;
+    position: relative;
+  }
+
+  .videoreview__icon {
+    position: absolute;
+    left: 283px;
+    top: 189px;
   }
 
   .videoreview__description {
