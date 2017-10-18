@@ -694,3 +694,19 @@
   left: 62px;
   background-color: #63d1bb;
 }
+
+@mixin silver-line-pseudo {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #ececec;
+}
+
+@mixin advantage-image {
+  position: absolute;
+  display: block;
+  fill: #63d1bb;
+}

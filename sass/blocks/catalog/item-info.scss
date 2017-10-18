@@ -2,7 +2,6 @@
   @include catalog-item-title;
 
   @include marpad-null;
-
 }
 
 .item-info__link {
@@ -38,11 +37,14 @@
 }
 
 .item-info__purchase {
-  padding-right: 20px;
-
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+}
+
+.item-info__icon-cart {
+  fill: #cccccc;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

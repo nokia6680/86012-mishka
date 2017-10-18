@@ -48,6 +48,10 @@
     border-top: none;
   }
 
+  .site-list__item--catalog::before {
+    @include silver-line-pseudo;
+  }
+
   .site-list__link {
     @include under-navi-text;
   }

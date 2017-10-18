@@ -18,6 +18,8 @@
   padding: 0;
 
   @include index-title-text;
+
+  margin-bottom: 30px;
 }
 
 .advantages__list {
@@ -31,6 +33,10 @@
     padding-top: 74px;
 
     @include curve-line-tablet;
+  }
+
+  .advantages__slogan {
+    margin-bottom: 45px;
   }
 }
 

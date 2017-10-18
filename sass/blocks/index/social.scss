@@ -4,13 +4,36 @@
 
 .social {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  padding-top: 25px;
+  padding-bottom: 35px;
+
+  position: relative;
+}
+
+.social::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+  top: 80px;
 }
 
 .social__list {
   list-style: none;
-
   @include marpad-null;
+
+  width: 260px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-left: 40px;
+  padding-right: 40px;
 }
