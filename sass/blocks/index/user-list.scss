@@ -26,7 +26,7 @@
 }
 
 .user-list--hide {
-  display: none;
+  display: block;
 }
 
 .user-list__link {
@@ -82,15 +82,6 @@
     padding-right: 31px;
 
     position: relative;
-  }
-
-  .user-list__search-icon {
-    position: absolute;
-    display: block;
-    left: 30px;
-    width: 18px;
-    height: 19px;
-    fill: red;
   }
 
   .user-list__item--cart {

@@ -14,6 +14,16 @@
   background-color: transparent;
 }
 
+.reviews-toggle__arrow-prev {
+  position: absolute;
+  display: block;
+  fill: black;
+  width: 50px;
+  height: 26px;
+  top: 0;
+  left: 0;
+}
+
 .reviews-toggle__next {
   height: 50px;
   border: 1px solid #ececec;
