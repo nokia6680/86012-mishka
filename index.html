@@ -219,18 +219,48 @@
       </div>
       <a class="contacts-details__send-us" href="#">Напишите нам</a>
     </section>
+
+    <section class="modal">
+      <div class="modal__overlay"></div>
+        <div class="modal__container">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <b class="modal__option">Выберите размер:</b>
+          <form class="modal__form form-popup" method="post" action="https://echo.htmlacademy.ru">
+            <div class="form-popup__buttons">
+              <label for="small">S</label>
+              <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="small" name="small">
+
+              <label for="medium">M</label>
+              <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="medium" name="medium">
+
+              <label for="large">L</label>
+              <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="large" name="large">
+
+            </div>
+            <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
+          </form>
+        </div>
+    </section>
   </main>
 
 <!--Модальное окно-->
-  <section class="modal modal__container">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <b class="modal__option">Выберите размер:</b>
-    <div class="modal__buttons">
-      <button class="modal__buttons-size" type="button" value="Small">S</button>
-      <button class="modal__buttons-size" type="button" value="Medium">M</button>
-      <button class="modal__buttons-size" type="button" value="Large">L</button>
-    </div>
-    <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
+  <section class="modal-1">
+    <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <b class="modal__option">Выберите размер:</b>
+        <form class="modal__form form-popup" method="post" action="https://echo.htmlacademy.ru">
+          <div class="form-popup__buttons">
+            <label for="small">S</label>
+            <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="small" name="small-size">
+            <label for="medium">M</label>
+            <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="medium" name="medium-size">
+            <label for="large">L</label>
+            <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="large" name="large-size">
+          </div>
+          <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
+        </form>
+      </div>
   </section>
 
   <footer class="page-footer">

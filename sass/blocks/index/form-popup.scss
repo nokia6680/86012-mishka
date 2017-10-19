@@ -1,0 +1,27 @@
+.form-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-popup__buttons {
+  width: 260px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form-popup__buttons--checkbox + label {
+  @include checkbox-modal-default;
+}
+
+.form-popup__buttons--checkbox + label::before {
+  @include custom-modal-checkbox;
+}
+
+.form-popup__buttons--checkbox:first-child + label::before {
+  @include custom-modal-checkbox;
+}

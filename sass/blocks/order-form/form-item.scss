@@ -75,6 +75,14 @@
   background-color: transparent;
 
   padding-right: 42px;
+
+  &:hover {
+    border-color: $hover;
+  }
+}
+
+.form-item__input:hover ~ svg {
+  fill: $hover;
 }
 
 .form-item__contact {
@@ -94,17 +102,6 @@
   fill: #cccccc;
   right: 38px;
   bottom: 18px;
-}
-
-.form-item__input {
-  &:hover {
-    .form-item__icon--tel {
-      fill: red;
-    }
-    .form-item__icon--tel {
-      border-color: red;
-    }
-  }
 }
 
 .form-item__textarea {
@@ -223,6 +220,25 @@
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  .form-item__contact {
+    position: relative;
+  }
+
+  .form-item__icon--tel {
+    position: absolute;
+    display: block;
+    fill: #cccccc;
+    right: 233px;
+    bottom: 18px;
+  }
+
+  .form-item__icon--email {
+    position: absolute;
+    display: block;
+    fill: #cccccc;
+    right: 233px;
+    bottom: 18px;
   }
 
   .form-item__input {

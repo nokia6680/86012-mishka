@@ -511,6 +511,14 @@
   }
 }
 
+@mixin checkbox-modal-default {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+
+  position: relative;
+}
+
 @mixin radio-default {
   display: inline-block;
   vertical-align: top;
@@ -565,6 +573,38 @@
     width: 54px;
     height: 52px;
     top: -15px;
+    left: 0;
+    border: 2px solid #444444;
+  }
+}
+
+@mixin custom-modal-checkbox {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 82px;
+  height: 52px;
+  top: -10px;
+  left: -39px;
+  border: 2px solid #444444;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 112px;
+    height: 52px;
+    top: 0;
+    left: 0;
+    border: 2px solid #444444;
+  }
+  @media (min-width: $desctop-width) {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 112px;
+    height: 52px;
+    top: 0px;
     left: 0;
     border: 2px solid #444444;
   }
@@ -711,7 +751,7 @@
   fill: #63d1bb;
 }
 
-@mixin retina {  
+@mixin retina {
   @media(min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
     @content;
   }
