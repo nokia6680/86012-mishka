@@ -44,6 +44,69 @@
   justify-content: space-between;
 }
 
+.form-item__label {
+  @include form-title-text;
+  @include marpad-null;
+
+  margin-bottom: 25px;
+  padding-right: 200px;
+
+  position: relative;
+}
+
+.form-item__label::after {
+  @include green-line-pseudo;
+  width: 85%;
+}
+
+.form-item__label--email::after {
+  @include green-line-pseudo;
+  width: 70%;
+  left: 81px;
+}
+
+.form-item__input {
+  border: 0;
+  border-bottom: 2px solid #000000;
+  padding-top: 13px;
+  padding-bottom: 20px;
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+
+  padding-right: 42px;
+}
+
+.form-item__contact {
+  position: relative;
+}
+
+.form-item__icon--tel {
+  position: absolute;
+  fill: #cccccc;
+  right: 38px;
+  bottom: 18px;
+}
+
+.form-item__icon--email {
+  position: absolute;
+  display: block;
+  fill: #cccccc;
+  right: 38px;
+  bottom: 18px;
+}
+
+.form-item__input {
+  &:hover {
+    .form-item__icon--tel {
+      fill: red;
+    }
+    .form-item__icon--tel {
+      border-color: red;
+    }
+  }
+}
+
 .form-item__textarea {
   min-height: 138px;
   border: 2px solid black;
@@ -74,12 +137,45 @@
     display: none;
   }
 
+  .form-item__label {
+    width: 167px;
+    padding-right: 0;
+  }
+
+  .form-item__label::after {
+    display: none;
+  }
+
   .form-item__contact {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
+    flex-wrap: wrap;
+    position: relative;
   }
+
+  .form-item__icon--tel {
+    position: absolute;
+    display: block;
+    fill: #cccccc;
+    right: 76px;
+    bottom: 18px;
+  }
+
+  .form-item__icon--email {
+    position: absolute;
+    display: block;
+    fill: #cccccc;
+    right: 76px;
+    bottom: 18px;
+  }
+
+  .form-item__input {
+    width: 500px;
+    padding-left: 18px;
+  }
+
 
   .form-item__textarea {
     width: 500px;
@@ -111,11 +207,26 @@
     display: none;
   }
 
+  .form-item__label {
+    width: 175px;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 0;
+  }
+
+  .form-item__label::after {
+    display: none;
+  }
+
   .form-item__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .form-item__input {
+    min-width: 700px;
   }
 
   .form-item__textarea {

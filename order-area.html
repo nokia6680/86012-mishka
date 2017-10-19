@@ -136,17 +136,21 @@
 
       <div class="order-form__item form-item order-form__item--gray">
         <div class="form-item__contact order-form__container">
-          <h2 class="form-item__legend">Тел</h2>
-          <input class="form-list__input form-list__input--tel" type="tel" name="tel" placeholder="+7-XXX-XX-XX*" id="tel" required/>
-          <span class="order-form__icon"></span>
+          <label class="form-item__label" for="tel">Тел</label>
+          <input class="form-item__input form-item__input--tel" type="tel" name="tel" placeholder="+7-XXX-XX-XX*" id="tel" required/>
+          <svg class="form-item__icon--tel" width="25" height="24">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
         </div>
       </div>
 
       <div class="order-form__item form-item order-form__item--gray">
         <div class="form-item__contact order-form__container">
-          <h2 class="form-item__legend form-item__legend--email">e-mail</h2>
-          <input class="form-list__input form-list__input--email" type="email" name="email" placeholder="Ваш Email*" id="email" required>
-          <span class="order-form__icon"></span>
+          <label class="form-item__legend form-item__legend--email" for="email">e-mail</label>
+          <input class="form-item__input form-item__input--email" type="email" name="email" placeholder="Ваш Email*" id="email" required>
+          <svg class="form-item__icon--email" width="25" height="24">
+            <use xlink:href="img/sprite.svg#icon-mail"></use>
+          </svg>
         </div>
       </div>
 

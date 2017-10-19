@@ -12,7 +12,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 575px auto;
+    background-size: cover auto;
   }
 }
 
@@ -59,10 +59,6 @@
   display: none;
 }
 
-@media (min-width: 320px) {
-
-}
-
 @media (min-width: $tablet-width) {
   .page-intro {
     display: flex;
@@ -80,7 +76,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: 1150px auto;
+      background-size: cover auto;
     }
   }
 
@@ -91,14 +87,6 @@
     margin-bottom: 370px;
 
     padding: 0;
-  }
-}
-
-@media (min-width: 768px) and (min-resolution: 144dpi),
-       (min-width: 768px) and (min-resolution: 1.5dppx) {
-  .page-intro {
-    background-image: url("../img/hero-tablet@2x.jpg");
-    background-size: 1150px auto;
   }
 }
 
@@ -163,7 +151,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
-      background-size: content auto;
+      background-size: cover auto;
     }
   }
 
@@ -206,14 +194,6 @@
   .page-intro__slogan--order {
     margin: 0 auto;
     text-align: center;
-  }
-}
-
-@media (min-width: 768px) and (min-resolution: 144dpi),
-       (min-width: 768px) and (min-resolution: 1.5dppx) {
-  .page-intro {
-    background-image: url("../img/hero-desktop@2x.jpg");
-    background-size: 1150px auto;
   }
 }
 

@@ -710,3 +710,9 @@
   display: block;
   fill: #63d1bb;
 }
+
+@mixin retina {  
+  @media(min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+    @content;
+  }
+}

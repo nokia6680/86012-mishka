@@ -72,17 +72,6 @@
   background-color: transparent;
 }
 
-.form-list__input--tel,
-.form-list__input--email {
-  border: 0;
-  border-bottom: 2px solid #000000;
-  padding-top: 13px;
-  padding-bottom: 20px;
-  height: 50px;
-  width: 100%;
-  background-color: transparent;
-}
-
 .form-list__input--text:hover {
   border-color: $hover;
 }
@@ -114,12 +103,6 @@
   .form-list__input--text {
     margin-left: 25px;
     width: 100%;
-    padding-left: 18px;
-  }
-
-  .form-list__input--tel,
-  .form-list__input--email {
-    max-width: 500px;
     padding-left: 18px;
   }
 
@@ -166,11 +149,6 @@
     width: 100%;
 
     padding-right: 175px;
-    max-width: 700px;
-  }
-
-  .form-list__input--tel,
-  .form-list__input--email {
     max-width: 700px;
   }
 }
