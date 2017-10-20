@@ -78,6 +78,7 @@
 
   &:hover {
     border-color: $hover;
+    @include soft-animation;
   }
 
   outline: none;
@@ -85,14 +86,18 @@
 
 .form-item__input:hover ~ svg {
   fill: $hover;
+
+  @include soft-animation;
 }
 
 .form-item__icon--tel:hover {
   fill: $hover;
+  @include soft-animation;
 }
 
 .form-item__icon--email:hover {
   fill: $hover;
+  @include soft-animation;
 }
 
 .form-item__contact {

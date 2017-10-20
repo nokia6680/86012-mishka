@@ -21,6 +21,7 @@
     @include intro-text-tablet;
 
     margin-bottom: 62px;
+    margin-top: 46px;
   }
 }
 
@@ -34,7 +35,7 @@
   .contacts-details__title {
     @include intro-text-desctop;
 
-    margin-top: 80px;
+    margin-top: 150px;
     margin-bottom: 62px;
   }
 }

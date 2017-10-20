@@ -25,13 +25,23 @@
   margin: 0 auto;
   width: 182px;
 
-  &:hover {
-    color: $hover-link;
-  }
+    &:hover {
+      fill: $hover;
+      opacity: 0.6;
+    }
 
-  &:active {
-    color: $active-link;
-  }
+    &:active {
+      fill: $hover;
+      opacity: 0.3;
+    }
+
+    &:hover svg {
+      fill: #46c1ae;
+    }
+
+    &:active svg {
+      fill: #bde3dd;
+    }
 }
 
 .user-list__item--search {
@@ -46,15 +56,6 @@
   width: 18px;
   height: 19px;
   fill: #d3d2d2;
-
-  &:hover {
-    fill: $hover;
-  }
-
-  &:active {
-    fill: $hover;
-    opacity: 0.3;
-  }
 }
 
 .user-list__item--cart {

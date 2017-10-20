@@ -2,7 +2,7 @@
   @include container;
 }
 
-.copyright {
+.copyright__link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,22 +12,48 @@
 
   padding-left: 40px;
   padding-right: 40px;
+
+  text-decoration: none;
 }
 
 .copyright__text {
   @include copyright-text;
 
   margin-right: 29px;
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__icon {
   fill: #63d1bb;
 }
 
-@media (min-width: $tablet-width) {
-  .copyright {
-    margin-bottom: 0;
-    padding-right: 0;
-    padding-left: 0;
+.copyright__link {
+  &:hover svg {
+    fill: #46c1ae;
   }
+
+  &:active svg {
+    fill: #bde3dd;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+
 }

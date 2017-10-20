@@ -887,3 +887,10 @@
     opacity: 0.3;
   }
 }
+
+@mixin soft-animation {
+  transition-property: initial;
+  transition-duration: 0.2s;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}

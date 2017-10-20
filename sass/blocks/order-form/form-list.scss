@@ -23,10 +23,14 @@
 
 .form-list__input--radio + label:hover::before {
   border-color: $hover;
+
+  @include soft-animation;
 }
 
 .form-list__input--radio + label:active::before {
   border-color: $active;
+
+  @include soft-animation;
 }
 
 
@@ -44,10 +48,14 @@
 
 .form-list__input--checkbox + label:hover::before {
   border-color: $hover;
+
+  @include soft-animation;
 }
 
 .form-list__input--checkbox + label:active::before {
   border-color: $active;
+
+  @include soft-animation;
 }
 
 .form-list__input--checkbox:checked + label::after {
@@ -75,10 +83,14 @@
 
 .form-list__input--text:hover {
   border-color: $hover;
+
+  @include soft-animation;
 }
 
 .form-item__input--text:active {
   border-color: $hover;
+
+  @include soft-animation;
 }
 
 @media (min-width: $tablet-width) {
