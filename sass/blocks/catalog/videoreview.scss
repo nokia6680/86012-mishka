@@ -59,6 +59,19 @@
   position: absolute;
   left: 79px;
   top: 36px;
+
+  &:hover {
+    transform: scale(1.2);
+
+    @include soft-animation;
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+
+    @include soft-animation;
+  }
 }
 
 .videoreview__order {
