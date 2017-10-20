@@ -863,12 +863,12 @@
 }
 
 @mixin review-toggle {
-  &:hover {
-    fill: #666666;
-  }
-
   &:active {
     fill: #b2b2b2;
+  }
+
+  &:hover {
+    fill: #666666;
   }
 }
 
