@@ -38,6 +38,9 @@
   padding-right: 40px;
 }
 
+.social__link {
+ @include social-link;
+}
 
 @media (min-width: $tablet-width) {
   .social {

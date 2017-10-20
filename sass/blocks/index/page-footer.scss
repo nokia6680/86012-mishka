@@ -25,15 +25,23 @@
 
   .page-footer__logo {
     display: block;
-
   }
 
   .page-footer__social {
-
     margin-right: 84px;
     margin-left: 159px;
   }
 
+  .page-footer__logo-image {
+    &:hover {
+      fill: #63d1bb;
+    }
+
+    &:active {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $desctop-width) {

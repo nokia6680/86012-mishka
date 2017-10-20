@@ -866,3 +866,24 @@
     fill: #b2b2b2;
   }
 }
+
+@mixin social-link {
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+}
+
+@mixin logo-image {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
