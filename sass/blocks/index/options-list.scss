@@ -12,6 +12,45 @@
   margin-bottom: 30px;
 }
 
+.options-list__item {
+  position: relative;
+}
+
+.options-list__icon--eco {
+  @include advantage-image;
+  top: 0;
+  left: 8px;
+}
+
+.options-list__icon--style {
+  @include advantage-image;
+  top: 0;
+  left: 1px;
+}
+
+.options-list__icon--like {
+  @include advantage-image;
+  top: 0;
+  left: 7px;
+}
+
+.options-list__icon--love {
+  @include advantage-image;
+  top: 0;
+  left: 3px;
+}
+
+.options-list__icon--nation {
+  @include advantage-image;
+  top: 0;
+  left: -6px;
+}
+
+.options-list__icon--present {
+  @include advantage-image;
+  top: 0;
+  left: 3px;
+}
 
 @media (min-width: $tablet-width) {
   .options-list {

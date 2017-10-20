@@ -5,9 +5,29 @@
 .copyright {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .copyright__text {
   @include copyright-text;
+
+  margin-right: 29px;
+}
+
+.copyright__icon {
+  fill: #63d1bb;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

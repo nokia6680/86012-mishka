@@ -1,8 +1,5 @@
 .page-footer {
   background-color: $bg-lightgray;
-
-  padding-top: 52px;
-  padding-bottom: 52px;
 }
 
 .page-footer__wrapper {
@@ -29,13 +26,25 @@
   .page-footer__logo {
     display: block;
   }
+
+  .page-footer__social {
+    margin-right: 84px;
+    margin-left: 159px;
+  }
+
+  .page-footer__logo-image {
+    &:hover {
+      fill: #63d1bb;
+    }
+
+    &:active {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $desctop-width) {
-  .page-footer {
-    margin-top: 105px;
-  }
-
   .page-footer__wrapper {
     display: flex;
     flex-direction: row;

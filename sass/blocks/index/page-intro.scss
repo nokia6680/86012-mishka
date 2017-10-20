@@ -1,24 +1,27 @@
 .page-intro {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: top;
+  background-position: center -18px;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 575px auto;
 
   text-align: center;
+
+  border-top: 1px solid #e7e7e7;
+
+  padding-top: 75px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: cover auto;
+  }
 }
 
 .page-intro--catalog {
   background: #f1f1f1 url() 0 0 no-repeat;
-
-  padding-bottom: 75px;
-  padding-top: 75px;
 }
 
 .page-intro--order {
   background: #f1f1f1 url() 0 0 no-repeat;
-
-  padding-bottom: 75px;
-  padding-top: 75px;
 }
 
 .page-intro__container {
@@ -30,15 +33,17 @@
   @include intro-text;
 
   padding-top: 75px;
-  padding-bottom: 137px;
+  padding-bottom: 47px;
 }
 
 .page-intro__slogan--catalog {
-  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 75px;
 }
 
 .page-intro__slogan--order {
-  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 75px;
 }
 
 .page-intro__list {
@@ -59,10 +64,70 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1150px auto;
+
+    text-align: center;
+
+    padding: 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: cover auto;
+    }
   }
 
   .page-intro__slogan {
     @include intro-text-tablet;
+
+    margin-top: 160px;
+    margin-bottom: 370px;
+
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-intro {
+      margin-top: -69px;
+      border-top: 1px solid #e7e7e7;
+  }
+
+  .page-intro--catalog {
+    background: #f1f1f1 url() 0 0 no-repeat;
+    padding-bottom: 12px;
+    position: relative;
+  }
+
+  .page-intro--catalog::after {
+    @include curve-figure;
+  }
+
+  .page-intro--order {
+    background: #f1f1f1 url() 0 0 no-repeat;
+    padding-bottom: 12px;
+    position: relative;
+  }
+
+  .page-intro--order::after {
+    @include curve-figure;
+  }
+
+  .page-intro__slogan--catalog {
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    margin-bottom: 72px;
+  }
+
+  .page-intro__slogan--order {
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    margin-bottom: 72px;
   }
 }
 
@@ -71,6 +136,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -64px;
+    background-size: 1150px auto;
+
+    text-align: center;
+    margin-top: -69px;
+
+    padding: 0;
+
+    border-top: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: cover auto;
+    }
   }
 
   .page-intro__container {
@@ -78,6 +160,8 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    border-top: 1px solid #e7e7e7;
   }
 
   .page-intro__list {
@@ -92,10 +176,48 @@
     width: 700px;
     text-align: center;
     order: 3;
+
+    margin-top: 163px;
+    margin-bottom: 284px;
   }
 
   .page-intro__delivery {
     display: block;
     order: 2;
+  }
+
+  .page-intro__slogan--catalog {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .page-intro__slogan--order {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-intro--catalog {
+    background: #f1f1f1 url() 0 0 no-repeat;
+  }
+
+  .page-intro--order {
+    background: #f1f1f1 url() 0 0 no-repeat;
+  }
+  .page-intro__slogan--catalog {
+    margin: 0 auto;
+    text-align: center;
+
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+
+  .page-intro__slogan--order {
+    margin: 0 auto;
+    text-align: center;
+
+    margin-top: 75px;
+    margin-bottom: 75px;
   }
 }

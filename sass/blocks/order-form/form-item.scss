@@ -8,7 +8,20 @@
   @include form-title-text;
   @include marpad-null;
 
-  padding-bottom: 25px;
+  margin-bottom: 25px;
+  padding-right: 200px;
+
+  position: relative;
+}
+
+.form-item__legend::after {
+  @include green-line-pseudo;
+}
+
+.form-item__legend--email::after {
+  @include green-line-pseudo;
+  width: 70%;
+  left: 81px;
 }
 
 .form-item__list {
@@ -31,15 +44,94 @@
   justify-content: space-between;
 }
 
+.form-item__label {
+  @include form-title-text;
+  @include marpad-null;
+
+  margin-bottom: 25px;
+  padding-right: 200px;
+
+  position: relative;
+}
+
+.form-item__label::after {
+  @include green-line-pseudo;
+  width: 85%;
+}
+
+.form-item__label--email::after {
+  @include green-line-pseudo;
+  width: 70%;
+  left: 81px;
+}
+
+.form-item__input {
+  border: 0;
+  border-bottom: 2px solid #000000;
+  padding-top: 13px;
+  padding-bottom: 20px;
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+
+  padding-right: 42px;
+
+  &:hover {
+    border-color: $hover;
+  }
+
+  outline: none;
+}
+
+.form-item__input:hover ~ svg {
+  fill: $hover;
+}
+
+.form-item__icon--tel:hover {
+  fill: $hover;
+}
+
+.form-item__icon--email:hover {
+  fill: $hover;
+}
+
+.form-item__contact {
+  position: relative;
+}
+
+.form-item__icon--tel {
+  position: absolute;
+  fill: #cccccc;
+  right: 38px;
+  bottom: 18px;
+}
+
+.form-item__icon--email {
+  position: absolute;
+  display: block;
+  fill: #cccccc;
+  right: 38px;
+  bottom: 18px;
+}
+
 .form-item__textarea {
   min-height: 138px;
   border: 2px solid black;
+
+  padding: 17px;
+  outline: none;
+}
+
+.form-item__textarea:hover {
+  border-color: $hover;
+}
+
+.form-item__textarea:active {
+  border-color: $hover;
 }
 
 .order-form__description {
   @include form-required-text;
-
-  margin-bottom: 30px;
 }
 
 
@@ -53,6 +145,20 @@
 
   .form-item__legend {
     width: 167px;
+    padding-right: 0;
+  }
+
+  .form-item__legend::after {
+    display: none;
+  }
+
+  .form-item__label {
+    width: 167px;
+    padding-right: 0;
+  }
+
+  .form-item__label::after {
+    display: none;
   }
 
   .form-item__contact {
@@ -60,7 +166,31 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
+    flex-wrap: wrap;
+    position: relative;
   }
+
+  .form-item__icon--tel {
+    position: absolute;
+    display: block;
+    fill: #cccccc;
+    right: 76px;
+    bottom: 18px;
+  }
+
+  .form-item__icon--email {
+    position: absolute;
+    display: block;
+    fill: #cccccc;
+    right: 76px;
+    bottom: 18px;
+  }
+
+  .form-item__input {
+    width: 500px;
+    padding-left: 18px;
+  }
+
 
   .form-item__textarea {
     width: 500px;
@@ -85,6 +215,22 @@
     width: 175px;
     text-align: left;
     padding-left: 60px;
+    padding-right: 0;
+  }
+
+  .form-item__legend::after {
+    display: none;
+  }
+
+  .form-item__label {
+    width: 175px;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 0;
+  }
+
+  .form-item__label::after {
+    display: none;
   }
 
   .form-item__wrapper {
@@ -92,6 +238,29 @@
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  .form-item__contact {
+    position: relative;
+  }
+
+  .form-item__icon--tel {
+    position: absolute;
+    display: block;
+    fill: #cccccc;
+    right: 233px;
+    bottom: 18px;
+  }
+
+  .form-item__icon--email {
+    position: absolute;
+    display: block;
+    fill: #cccccc;
+    right: 233px;
+    bottom: 18px;
+  }
+
+  .form-item__input {
+    min-width: 700px;
   }
 
   .form-item__textarea {

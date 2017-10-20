@@ -10,14 +10,54 @@
   border: 1px solid #ececec;
   border-right: none;
   width: 130px;
-
+  position: relative;
   background-color: transparent;
+  outline: none;
+}
+
+.reviews-toggle__arrow-prev {
+  position: absolute;
+  display: block;
+  fill: black;
+  width: 50px;
+  height: 26px;
+  top: 11px;
+  left: 38px;
+
+  @include review-toggle;
 }
 
 .reviews-toggle__next {
   height: 50px;
   border: 1px solid #ececec;
   width: 130px;
-
+  position: relative;
   background-color: transparent;
+  outline: none;
+}
+
+.reviews-toggle__arrow-next {
+  position: absolute;
+  display: block;
+  fill: black;
+  width: 50px;
+  height: 26px;
+  top: 11px;
+  left: 38px;
+
+  @include review-toggle;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-toggle__previous,
+  .reviews-toggle__next {
+    border: none;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .reviews-toggle__previous,
+  .reviews-toggle__next {
+    border: none;
+  }
 }

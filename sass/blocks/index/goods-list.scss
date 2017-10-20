@@ -1,15 +1,28 @@
+.goods-list {
+  width:100%;
+  text-align:left;
+  border-collapse:collapse;
+}
+
 .goods-list__item {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  width: 260px;
+  display: block;
+
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 
   border-bottom: 1px solid #ececec;
 }
 
+.goods-list__item:last-child {
+  margin-bottom: 0;
+}
+
 .goods-list__parameter {
   @include table-text;
-
   min-width: 98px;
 }
+
 
 .goods-list__value {
   @include table-text;

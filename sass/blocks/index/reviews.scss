@@ -1,7 +1,27 @@
-.reviews__container {
-  @include container;
-}
-
 .reviews {
   padding-bottom: 51px;
+
+  @include curve-line-mobile;
+
+  background-position: center bottom;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding-bottom: 85px;
+
+    @include curve-line-tablet;
+
+    background-position: center bottom;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .reviews {
+    padding-bottom: 91px;
+
+    @include curve-line-desktop;
+
+    background-position: center bottom;
+  }
 }

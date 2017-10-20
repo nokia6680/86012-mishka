@@ -1,0 +1,31 @@
+.form-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 260px;
+}
+
+.modal__submit {
+  @include mobile-popup-btn;
+
+  width: 260px;
+  color: #ffffff;
+  margin-top: 31px;
+  border: none;
+  background-color: #63d1bb;
+
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-popup {
+    width: 350px;
+  }
+
+  .modal__submit {
+    width: 350px;
+  }
+}
