@@ -14,6 +14,20 @@
 
 .details-item__email-to {
   @include review-description-text;
+
+  text-decoration: none;
+  border-bottom: 1px solid #62d1ba;
+}
+
+.details-item__email-to {
+  &:hover {
+    color: #62d1ba;
+  }
+
+  &:active {
+    color: #62d1ba;
+    opacity: 0.3;
+  }
 }
 
 .details-item__description {
@@ -38,5 +52,8 @@
 
   .details-item__email-to {
     @include contacts-list-tablet;
+
+    display: block;
+    height: 30px;
   }
 }

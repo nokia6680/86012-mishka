@@ -40,6 +40,12 @@
   border: 1px solid #ededed;
   margin-top: 30px;
   margin-bottom: 58px;
+
+  &:hover {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+
+    @include soft-animation;
+  }
 }
 
 .videoreview__movie {
@@ -54,6 +60,19 @@
   position: absolute;
   left: 79px;
   top: 36px;
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+
+    @include soft-animation;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+
+    @include soft-animation;
+  }
 }
 
 .videoreview__order {
@@ -63,7 +82,7 @@
 
   width: 188px;
 
-  padding: 15px 24px 15px 24px;
+  padding: 15px 20px 15px 20px;
 
   margin-left: 33px;
   margin-top: 28px;
@@ -145,6 +164,8 @@
 
     margin-left: auto;
     margin-bottom: 105px;
+
+    min-height: 455px;
   }
 
   .videoreview__movie {
@@ -197,8 +218,8 @@
 
     width: 226px;
 
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 37px;
+    padding-right: 37px;
 
     margin-left: auto;
     margin-right: 65px;

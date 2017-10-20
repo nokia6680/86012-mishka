@@ -20,6 +20,13 @@
   line-height: 0;
 }
 
+.catalog-item__info {
+  &:hover {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    @include soft-animation;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .catalog-item {
     display: flex;

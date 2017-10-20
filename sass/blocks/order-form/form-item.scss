@@ -70,7 +70,6 @@
   border-bottom: 2px solid #000000;
   padding-top: 13px;
   padding-bottom: 20px;
-  height: 50px;
   width: 100%;
   background-color: transparent;
 
@@ -78,6 +77,7 @@
 
   &:hover {
     border-color: $hover;
+    @include soft-animation;
   }
 
   outline: none;
@@ -85,14 +85,18 @@
 
 .form-item__input:hover ~ svg {
   fill: $hover;
+
+  @include soft-animation;
 }
 
 .form-item__icon--tel:hover {
   fill: $hover;
+  @include soft-animation;
 }
 
 .form-item__icon--email:hover {
   fill: $hover;
+  @include soft-animation;
 }
 
 .form-item__contact {

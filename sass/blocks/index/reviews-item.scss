@@ -38,7 +38,7 @@
   }
 
   .reviews-item__description {
-    width: 100%;
+    width: 590px;
     order: 1;
   }
 
@@ -68,7 +68,7 @@
     margin-bottom: 0;
     position: absolute;
 
-    right: 5px;
+    right: -75px;
     bottom: 50px;
   }
 }
@@ -82,7 +82,7 @@
   }
 
   .reviews-item__description {
-    width: 100%;
+    width: 680px;
     order: 1;
   }
 
@@ -105,5 +105,8 @@
     width: 175px;
     margin-left: auto;
     order: 3;
+
+    right: -190px;
+    bottom: 50px;
   }
 }

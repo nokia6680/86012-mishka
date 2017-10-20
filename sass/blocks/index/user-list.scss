@@ -17,7 +17,7 @@
 }
 
 .user-list--hide {
-  display: none;
+  display: block;
 }
 
 .user-list__link {
@@ -25,13 +25,23 @@
   margin: 0 auto;
   width: 182px;
 
-  &:hover {
-    color: $hover-link;
-  }
+    &:hover {
+      fill: $hover;
+      opacity: 0.6;
+    }
 
-  &:active {
-    color: $active-link;
-  }
+    &:active {
+      fill: $hover;
+      opacity: 0.3;
+    }
+
+    &:hover svg {
+      fill: #46c1ae;
+    }
+
+    &:active svg {
+      fill: #bde3dd;
+    }
 }
 
 .user-list__item--search {
@@ -42,19 +52,10 @@
   position: absolute;
   display: block;
   left: 32px;
-  top: 33px;
+  top: 35px;
   width: 18px;
   height: 19px;
   fill: #d3d2d2;
-
-  &:hover {
-    fill: $hover;
-  }
-
-  &:active {
-    fill: $hover;
-    opacity: 0.3;
-  }
 }
 
 .user-list__item--cart {
@@ -65,9 +66,9 @@
   position: absolute;
   display: block;
   left: 32px;
-  top: 33px;
+  top: 35px;
   width: 18px;
-  height: 19px;
+  height: 18px;
   fill: #d3d2d2;
   opacity: 1;
 }
@@ -82,6 +83,7 @@
     order: 1;
 
     width: 350px;
+    border-left: 1px solid #ececec;
   }
 
   .user-list__item--cart {
@@ -94,6 +96,8 @@
     border-top: none;
 
     position: relative;
+
+    border-left: 1px solid #ececec;
   }
 
   .user-list__link {
@@ -109,14 +113,11 @@
     padding-right: 31px;
 
     position: relative;
-
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
   }
 
   .user-list__link--search {
     display: block;
-    width: 82px;
+
     padding: 0;
     font-size: 0;
   }

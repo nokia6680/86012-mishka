@@ -9,7 +9,6 @@
 
   padding: 0;
   margin: 0;
-
 }
 
 .page-list__item--interior {
@@ -22,14 +21,29 @@
 .page-list__link--lamp {
   position: absolute;
   display: block;
-
   fill: #3bb09d;
-
   width: 40px;
   height: 62px;
-  top: 23px;
+  top: 27px;
   right: 35px;
-  opacity: 1;
+}
+
+.page-list__link--interior {
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:hover svg {
+    fill: #29a592;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active svg {
+    fill: #44c0aa;
+  }
 }
 
 .page-list__item--toys {
@@ -42,14 +56,29 @@
 .page-list__link--toy {
   position: absolute;
   display: block;
-
   fill: #35a999;
-
   width: 60px;
   height: 60px;
-  top: 20px;
+  top: 27px;
   right: 27px;
-  opacity: 1;
+}
+
+.page-list__link--toys {
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:hover svg {
+    fill: #239f8e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active svg {
+    fill: #37b2a0;
+  }
 }
 
 .page-list__link {
@@ -59,7 +88,7 @@
 
   padding-right: 130px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 37px;
 
   display: block;
   height: 100%;
@@ -79,11 +108,24 @@
     @include curve-figure;
 
     left: 0;
-    height: 15px;
+    height: 22px;
+    bottom: -2px;
   }
 
   .page-list__item {
     width: 100%;
+
+    &:hover {
+      transform: translateY(-5px);
+      @include soft-animation;
+    }
+
+    &:active {
+      transform: translateY(-5px);
+      @include soft-animation;
+
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .page-list__link {
@@ -108,11 +150,12 @@
     @include curve-figure;
 
     left: 0px;
-    height: 17px;
+    height: 30px;
   }
 
   .page-list__item {
     width: 100%;
+
   }
 
   .page-list__link {
@@ -122,6 +165,7 @@
     display: block;
     height: 100%;
 
+    padding-bottom: 50px;
     padding-right: 350px;
     padding-left: 37px;
   }

@@ -9,6 +9,10 @@
   @include container;
 }
 
+.contacts-details__flag {
+  display: none;
+}
+
 .contacts__map {
   height: 460px;
   width: 100%;
@@ -46,6 +50,8 @@
 @media (min-width: $tablet-width) {
   .contacts__container {
     @include container;
+
+    position: relative;
   }
 
   .contacts {
@@ -53,7 +59,15 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: relative;
+  }
+
+  .contacts-details__flag {
+    position: absolute;
+    display: block;
+    width: 47px;
+    height: 81px;
+    top: 46px;
+    right: 54px;
   }
 
   .contacts__map {
@@ -94,6 +108,17 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
+
+    position: relative;
+  }
+
+  .contacts-details__flag {
+    position: absolute;
+    display: block;
+    width: 47px;
+    height: 81px;
+    top: 135px;
+    left: -130px;
   }
 
   .contacts__map {
