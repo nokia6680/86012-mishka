@@ -43,7 +43,7 @@
 
   &:hover {
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
-    
+
     @include soft-animation;
   }
 }
@@ -82,7 +82,7 @@
 
   width: 188px;
 
-  padding: 15px 24px 15px 24px;
+  padding: 15px 20px 15px 20px;
 
   margin-left: 33px;
   margin-top: 28px;
@@ -216,8 +216,8 @@
 
     width: 226px;
 
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 37px;
+    padding-right: 37px;
 
     margin-left: auto;
     margin-right: 65px;
