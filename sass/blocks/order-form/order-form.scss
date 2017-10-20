@@ -8,12 +8,13 @@
 }
 
 .order-form__book {
-  margin-bottom: 58px;
+  margin-bottom: 55px;
 }
 
 .order-form__submit {
   width: 260px;
   margin: 0;
+  margin-top: 33px;
 
   @include button;
 }

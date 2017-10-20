@@ -12,6 +12,7 @@
   width: 130px;
   position: relative;
   background-color: transparent;
+  outline: none;
 }
 
 .reviews-toggle__arrow-prev {
@@ -22,6 +23,8 @@
   height: 26px;
   top: 11px;
   left: 38px;
+
+  @include review-toggle;
 }
 
 .reviews-toggle__next {
@@ -30,6 +33,7 @@
   width: 130px;
   position: relative;
   background-color: transparent;
+  outline: none;
 }
 
 .reviews-toggle__arrow-next {
@@ -40,6 +44,8 @@
   height: 26px;
   top: 11px;
   left: 38px;
+
+  @include review-toggle;
 }
 
 @media (min-width: $tablet-width) {

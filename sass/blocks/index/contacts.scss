@@ -106,22 +106,16 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/map-desktop@2x.jpg");
-      background-size: 1050px auto;
+      background-size: 525px auto;
     }
+
+    margin-bottom: 105px;
   }
 
   .contacts-details__send-us {
     position: absolute;
     bottom: 0;
     margin-left: 175px;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 768px) and (min-resolution: 144dpi),
-       (min-width: 768px) and (min-resolution: 1.5dppx) {
-  .contacts__map {
-    background-image: url("../img/map-desktop@2x.jpg");
-    background-size: 1050px auto;
+    margin-bottom: 105px;
   }
 }

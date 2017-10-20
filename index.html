@@ -223,45 +223,54 @@
     <section class="modal">
       <div class="modal__overlay"></div>
         <div class="modal__container">
-          <h2 class="modal__title">Добавить в корзину</h2>
+          <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
           <b class="modal__option">Выберите размер:</b>
           <form class="modal__form form-popup" method="post" action="https://echo.htmlacademy.ru">
-            <div class="form-popup__buttons">
-              <label for="small">S</label>
-              <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="small" name="small">
-
-              <label for="medium">M</label>
-              <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="medium" name="medium">
-
-              <label for="large">L</label>
-              <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="large" name="large">
-
-            </div>
+            <ul class="form-popup__list popup-list">
+              <li class="popup-list__item">
+                <input class="visually-hidden popup-list__checkbox" type="checkbox" id="small" name="small">
+                <label class="popup-list__label" for="small">S</label>
+              </li>
+              <li class="popup-list__item">
+                <input class="visually-hidden popup-list__checkbox" type="checkbox" id="medium" name="medium">
+                <label class="popup-list__label" for="medium">M</label>
+              </li>
+              <li class="popup-list__item">
+                <input class="visually-hidden popup-list__checkbox" type="checkbox" id="large" name="large">
+                <label class="popup-list__label" for="large">L</label>
+              </li>
+            </ul>
             <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
           </form>
         </div>
     </section>
   </main>
 
-<!--Модальное окно-->
-  <section class="modal-1">
-    <div class="modal__overlay"></div>
-      <div class="modal__container">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <b class="modal__option">Выберите размер:</b>
-        <form class="modal__form form-popup" method="post" action="https://echo.htmlacademy.ru">
-          <div class="form-popup__buttons">
-            <label for="small">S</label>
-            <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="small" name="small-size">
-            <label for="medium">M</label>
-            <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="medium" name="medium-size">
-            <label for="large">L</label>
-            <input class="visually-hidden form-popup__buttons--checkbox" type="checkbox" id="large" name="large-size">
-          </div>
-          <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
-        </form>
-      </div>
-  </section>
+<!--Модальное окно
+<section class="modal">
+  <div class="modal__overlay"></div>
+    <div class="modal__container">
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+      <b class="modal__option">Выберите размер:</b>
+      <form class="modal__form form-popup" method="post" action="https://echo.htmlacademy.ru">
+        <ul class="form-popup__list popup-list">
+          <li class="popup-list__item">
+            <input class="visually-hidden popup-list__checkbox" type="checkbox" id="small" name="small">
+            <label class="popup-list__label" for="small">S</label>
+          </li>
+          <li class="popup-list__item">
+            <input class="visually-hidden popup-list__checkbox" type="checkbox" id="medium" name="medium">
+            <label class="popup-list__label" for="medium">M</label>
+          </li>
+          <li class="popup-list__item">
+            <input class="visually-hidden popup-list__checkbox" type="checkbox" id="large" name="large">
+            <label class="popup-list__label" for="large">L</label>
+          </li>
+        </ul>
+        <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
+      </form>
+    </div>
+</section>-->
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">

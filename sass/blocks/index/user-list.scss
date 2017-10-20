@@ -24,12 +24,19 @@
   display: block;
   margin: 0 auto;
   width: 182px;
+
+  &:hover {
+    color: $hover-link;
+  }
+
+  &:active {
+    color: $active-link;
+  }
 }
 
 .user-list__item--search {
   position: relative;
 }
-
 
 .user-list__search-icon {
   position: absolute;
@@ -39,6 +46,15 @@
   width: 18px;
   height: 19px;
   fill: #d3d2d2;
+
+  &:hover {
+    fill: $hover;
+  }
+
+  &:active {
+    fill: $hover;
+    opacity: 0.3;
+  }
 }
 
 .user-list__item--cart {

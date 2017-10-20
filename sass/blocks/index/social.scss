@@ -45,6 +45,10 @@
     padding-bottom: 57px;
   }
 
+  .social::after {
+    display: none;
+  }
+
   .social__list {
     width: 142px;
     display: flex;

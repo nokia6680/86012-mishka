@@ -24,6 +24,14 @@
   width: 182px;
 }
 
+.site-list__link:hover {
+  color: $hover-link;
+}
+
+.site-list__link:active {
+  color: $active-link;
+}
+
 @media (min-width: $tablet-width) {
   .site-list--hide {
     display: flex;
@@ -50,6 +58,14 @@
 
   .site-list__link {
     @include under-navi-text;
+  }
+
+  .site-list__link:hover {
+    color: $hover-link;
+  }
+
+  .site-list__link:active {
+    color: $active-link;
   }
 
   .main-nav__delivery {
@@ -86,5 +102,13 @@
 
   .site-list__item:first-child {
     margin-right: 35px;
+  }
+
+  .site-list__link:hover {
+    color: $hover-link;
+  }
+
+  .site-list__link:active {
+    color: $active-link;
   }
 }

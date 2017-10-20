@@ -77,6 +77,10 @@
   border-color: $hover;
 }
 
+.form-item__input--text:active {
+  border-color: $hover;
+}
+
 @media (min-width: $tablet-width) {
   .form-list {
     width: 500px;

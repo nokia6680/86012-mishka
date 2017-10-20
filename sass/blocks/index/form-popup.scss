@@ -3,25 +3,29 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
 
-.form-popup__buttons {
   width: 260px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
-.form-popup__buttons--checkbox + label {
-  @include checkbox-modal-default;
+.modal__submit {
+  @include mobile-popup-btn;
+
+  width: 260px;
+  color: #ffffff;
+  margin-top: 31px;
+  border: none;
+  background-color: #63d1bb;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
-.form-popup__buttons--checkbox + label::before {
-  @include custom-modal-checkbox;
-}
+@media (min-width: $tablet-width) {
+  .form-popup {
+    width: 350px;
+  }
 
-.form-popup__buttons--checkbox:first-child + label::before {
-  @include custom-modal-checkbox;
+  .modal__submit {
+    width: 350px;
+  }
 }

@@ -79,9 +79,19 @@
   &:hover {
     border-color: $hover;
   }
+
+  outline: none;
 }
 
 .form-item__input:hover ~ svg {
+  fill: $hover;
+}
+
+.form-item__icon--tel:hover {
+  fill: $hover;
+}
+
+.form-item__icon--email:hover {
   fill: $hover;
 }
 
@@ -109,11 +119,19 @@
   border: 2px solid black;
 
   padding: 17px;
+  outline: none;
+}
+
+.form-item__textarea:hover {
+  border-color: $hover;
+}
+
+.form-item__textarea:active {
+  border-color: $hover;
 }
 
 .order-form__description {
   @include form-required-text;
-
 }
 
 
