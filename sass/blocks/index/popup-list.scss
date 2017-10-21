@@ -14,9 +14,7 @@
 
 .popup-list__label {
   @include mobile-popup-btn;
-
 }
-
 
 .popup-list__checkbox + label {
   @include checkbox-modal-default;

@@ -7,6 +7,17 @@
   line-height: 24px;
   color: #444444;
 }
+
+@mixin global-text-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: 300;
+  }
+  line-height: 30px;
+  color: #444444;
+}
+
 /*Цвет текста навигации*/
 @mixin navi-text {
   font: {
@@ -68,6 +79,16 @@
   line-height: 24px;
   color: #ffffff;
 }
+
+@mixin goods-text-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 20px;
+    weight: bold;
+  }
+  line-height: 30px;
+  color: #ffffff;
+}
 /*Цвет текста названия товара на главной"*/
 @mixin index-title-text {
   font: {
@@ -85,6 +106,7 @@
     size: 17px;
     weight: bold;
   }
+  text-transform: uppercase;
   line-height: 20px;
   color: #63d1bb;
 }
@@ -119,6 +141,16 @@
   line-height: 24px;
   color: #444444;
 }
+
+@mixin goods-price-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 20px;
+    weight: bold;
+  }
+  line-height: 24px;
+  color: #444444;
+}
 /*Цвет текста кнопки "Заказать"*/
 @mixin goods-order-text {
   font: {
@@ -137,6 +169,16 @@
     weight: bold;
   }
   line-height: 20px;
+  color: #000000;
+}
+
+@mixin index-title-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 43px;
+    weight: bold;
+  }
+  line-height: 50px;
   color: #000000;
 }
 /*Текст заголовка секции ОТЗЫВЫ*/

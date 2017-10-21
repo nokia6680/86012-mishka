@@ -7,6 +7,9 @@
 
 .contacts-details__title {
   @include contacts-title-text;
+
+  margin-top: 34px;
+  margin-bottom: 25px;
 }
 
 .contacts-details__list {

@@ -14,14 +14,14 @@
 .reviews-item__name {
   @include author-name-text;
 
-  margin-top: 31px;
+  margin-top: 27px;
   margin-bottom: 0;
 }
 
 .reviews-item__instagram {
   @include author-instagram-text;
 
-  margin-top: 7px;
+  margin-top: 4px;
   margin-bottom: 29px;
 }
 

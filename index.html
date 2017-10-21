@@ -118,9 +118,9 @@
               <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka logo">
             </picture>
           </a>
-          <button class="main-nav__toggle main-nav__toggle--on" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button> <!--maon-nav__toggle--on-->
         </div>
-        <ul class="main-nav__list site-list site-list--hide">
+        <ul class="main-nav__list site-list"> <!--site-list--hide -->
           <li class="site-list__item site-list__item--catalog">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -128,7 +128,7 @@
             <a class="site-list__link" href="order-area.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list user-list--hide">
+        <ul class="main-nav__list user-list"> <!-- user-list--hide -->
           <li class="user-list__item user-list__item--search">
             <a class="user-list__link user-list__link--search" href="#">
               <svg class="user-list__search-icon" width="19" height="18">
@@ -138,8 +138,8 @@
             </a>
           </li>
           <li class="user-list__item user-list__item--cart">
-            <a class="user-list__link" href="#">
-              <svg class="user-list__cart-icon" width="19" height="18">
+            <a class="user-list__link btn-buy" href="#">
+              <svg class="user-list__cart-icon btn-buy" width="19" height="18">
                 <use xlink:href="#icon-cart"></use>
               </svg>
               Корзина: пока пуста</a>
@@ -193,7 +193,7 @@
               Цвет:
             </td>
             <td class="goods-list__value">
-              Тиффани/Серый
+              &laquo;Тиффани&raquo;/серый
             </td>
           </tr>
           <tr class="goods-list__item">
@@ -222,7 +222,7 @@
         </div>
         <div class="goods-wrapper__order goods-order">
           <b class="goods-order__price">Цена: 990 руб.</b>
-          <a class="goods-order__book" href="#">Заказать</a>
+          <a class="goods-order__book btn-buy" href="#">Заказать</a>
         </div>
       </div>
     </section>
@@ -241,7 +241,7 @@
             <svg class="options-list__icon--style" width="47" height="27">
               <use xlink:href="#advantages-money"></use>
             </svg>
-            <b class="options-list__title">Скандинавский стиль по российской цене</b>
+            <b class="options-list__title">Скандинавский стиль по&nbsp;российской цене</b>
           </li>
           <li class="options-list__item options-list__item--like">
             <svg class="options-list__icon--like" width="34" height="27">
@@ -322,58 +322,32 @@
       </div>
       <a class="contacts-details__send-us" href="#">Напишите нам</a>
     </section>
-
-    <section class="modal">
-      <div class="modal__overlay"></div>
-        <div class="modal__container">
-          <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-          <b class="modal__option">Выберите размер:</b>
-          <form class="modal__form form-popup" method="post" action="https://echo.htmlacademy.ru">
-            <ul class="form-popup__list popup-list">
-              <li class="popup-list__item">
-                <input class="visually-hidden popup-list__checkbox" type="checkbox" id="small" name="small">
-                <label class="popup-list__label" for="small">S</label>
-              </li>
-              <li class="popup-list__item">
-                <input class="visually-hidden popup-list__checkbox" type="checkbox" id="medium" name="medium">
-                <label class="popup-list__label" for="medium">M</label>
-              </li>
-              <li class="popup-list__item">
-                <input class="visually-hidden popup-list__checkbox" type="checkbox" id="large" name="large">
-                <label class="popup-list__label" for="large">L</label>
-              </li>
-            </ul>
-            <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
-          </form>
-        </div>
-    </section>
   </main>
 
-<!--Модальное окно
-<section class="modal">
-  <div class="modal__overlay"></div>
-    <div class="modal__container">
-      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-      <b class="modal__option">Выберите размер:</b>
-      <form class="modal__form form-popup" method="post" action="https://echo.htmlacademy.ru">
-        <ul class="form-popup__list popup-list">
-          <li class="popup-list__item">
-            <input class="visually-hidden popup-list__checkbox" type="checkbox" id="small" name="small">
-            <label class="popup-list__label" for="small">S</label>
-          </li>
-          <li class="popup-list__item">
-            <input class="visually-hidden popup-list__checkbox" type="checkbox" id="medium" name="medium">
-            <label class="popup-list__label" for="medium">M</label>
-          </li>
-          <li class="popup-list__item">
-            <input class="visually-hidden popup-list__checkbox" type="checkbox" id="large" name="large">
-            <label class="popup-list__label" for="large">L</label>
-          </li>
-        </ul>
-        <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
-      </form>
-    </div>
-</section>-->
+<!--Модальное окно-->
+<div class="overlay">
+  <div class="modal">
+    <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+    <b class="modal__option">Выберите размер:</b>
+    <form class="modal__form form-popup" method="post" action="https://echo.htmlacademy.ru">
+      <ul class="form-popup__list popup-list">
+        <li class="popup-list__item">
+          <input class="visually-hidden popup-list__checkbox" type="checkbox" id="small" name="small">
+          <label class="popup-list__label" for="small">S</label>
+        </li>
+        <li class="popup-list__item">
+          <input class="visually-hidden popup-list__checkbox" type="checkbox" id="medium" name="medium">
+          <label class="popup-list__label" for="medium">M</label>
+        </li>
+        <li class="popup-list__item">
+          <input class="visually-hidden popup-list__checkbox" type="checkbox" id="large" name="large">
+          <label class="popup-list__label" for="large">L</label>
+        </li>
+      </ul>
+      <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
+    </form>
+  </div>
+  </div>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -419,5 +393,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
