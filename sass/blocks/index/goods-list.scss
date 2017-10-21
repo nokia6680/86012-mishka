@@ -8,8 +8,8 @@
   width: 260px;
   display: block;
 
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 6px;
+  padding-bottom: 11px;
 
   border-bottom: 1px solid #ececec;
 }
@@ -26,4 +26,16 @@
 
 .goods-list__value {
   @include table-text;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-list__item {
+    width: 260px;
+    display: block;
+
+    margin-bottom: 8px;
+    padding-bottom: 9px;
+    margin-left: -1px;
+    border-bottom: 1px solid #ececec;
+  }
 }

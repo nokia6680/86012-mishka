@@ -7,11 +7,12 @@
 .goods-wrapper__description {
   @include global-text;
 
-  margin-top: 28px;
+  margin-top: 22px;
+  margin-bottom: 24px;
 }
 
 .goods-wrapper__image {
-  margin-bottom: 25px;
+  margin-bottom: 19px;
   margin-top: 28px;
 }
 
@@ -23,11 +24,12 @@
     }
 
     .goods-wrapper__description {
+      @include global-text-tablet;
       width: 292px;
       text-align: left;
 
-      margin-bottom: 50px;
-      margin-top: 46px;
+      margin-bottom: 44px;
+      margin-top: 49px;
     }
 
     .goods-wrapper__list {
@@ -38,7 +40,7 @@
 
     .goods-wrapper__image {
       position: absolute;
-      top: 77px;
+      top: 72px;
       right: 50px;
     }
 

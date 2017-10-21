@@ -7,13 +7,15 @@
 .goods-header__name {
   @include index-title-text;
 
-  margin-top: 33px;
+  margin-top: 27px;
   margin-bottom: 0;
 }
 
 .goods-header__status {
   @include goods-status-text;
   @include marpad-null;
+
+  margin-top: 6px;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,8 +30,8 @@
 
   .goods-header__name {
     @include intro-text-tablet;
-
-    margin: 0;
+    margin-top: -7px;
+    margin-left: -3px;
   }
 
   .goods-header__status {
@@ -37,6 +39,9 @@
 
     width: 100px;
     text-align: center;
+
+    margin-top: 0;
+    margin-right: 13px;
   }
 }
 
