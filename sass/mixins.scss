@@ -172,6 +172,16 @@
   color: #000000;
 }
 
+@mixin advantage-title-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 20px;
+    weight: bold;
+  }
+  line-height: 22px;
+  color: #000000;
+}
+
 @mixin index-title-tablet {
   font: {
     family: "Open Sans", "Arial", sans-serif;
@@ -179,6 +189,16 @@
     weight: bold;
   }
   line-height: 50px;
+  color: #000000;
+}
+
+@mixin index-title-desktop {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 53px;
+    weight: bold;
+  }
+  line-height: 57px;
   color: #000000;
 }
 /*Текст заголовка секции ОТЗЫВЫ*/
@@ -204,11 +224,33 @@
   color: #000000;
 }
 
+@mixin review-title-desktop {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 53px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 57px;
+  color: #000000;
+}
+
 /*Текст отзыва*/
 @mixin review-description-text {
   font: {
     family: "Open Sans", "Arial", sans-serif;
     size: 15px;
+    weight: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin review-description-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
     weight: normal;
   }
   line-height: 30px;
@@ -227,11 +269,22 @@
   color: #000000;
 }
 
+@mixin author-name-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 18px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+}
+
 @mixin author-instagram-text {
   font: {
     family: "Open Sans", "Arial", sans-serif;
     size: 17px;
-    weight: bold;
+    weight: 400;
     style: normal;
   }
   line-height: 30px;
@@ -260,6 +313,18 @@
   }
   line-height: 30px;
   color: #000000;
+  text-decoration: none;
+}
+
+@mixin contacts-list-mobile {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
   text-decoration: none;
 }
 
@@ -386,6 +451,18 @@
   text-decoration: none;
 }
 
+@mixin catalog-item-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 20px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
 @mixin catalog-item-details {
   font: {
     family: "Open Sans", "Arial", sans-serif;
@@ -398,10 +475,34 @@
   text-decoration: none;
 }
 
+@mixin catalog-item-details-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
 @mixin catalog-item-price {
   font: {
     family: "Open Sans", "Arial", sans-serif;
     size: 15px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin catalog-item-price-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
     weight: bold;
     style: normal;
   }

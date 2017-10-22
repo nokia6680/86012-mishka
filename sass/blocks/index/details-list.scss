@@ -23,6 +23,10 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    .details-list__item {
+      margin-right: 24px;
+    }
   }
 }
 

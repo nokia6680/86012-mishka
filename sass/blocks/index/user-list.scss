@@ -145,6 +145,35 @@
     padding: 0;
   }
 
+  .user-list__link {
+    margin-top: -2px;
+  }
+
+  .user-list__search-icon {
+    position: absolute;
+    display: block;
+    left: 32px;
+    top: 35px;
+    width: 18px;
+    height: 19px;
+    fill: #d3d2d2;
+  }
+
+  .user-list__item--cart {
+    position: relative;
+  }
+
+  .user-list__cart-icon {
+    position: absolute;
+    display: block;
+    left: 29px;
+    top: 34px;
+    width: 18px;
+    height: 18px;
+    fill: #d3d2d2;
+    opacity: 1;
+  }
+
   .user-list__item {
     padding-top: 32px;
     padding-bottom: 32px;

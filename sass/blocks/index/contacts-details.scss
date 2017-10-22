@@ -13,6 +13,8 @@
 }
 
 .contacts-details__list {
+  @include contacts-list-mobile;
+
   margin: 0;
   padding: 0;
   list-style: none;
@@ -23,8 +25,13 @@
   .contacts-details__title {
     @include intro-text-tablet;
 
-    margin-bottom: 62px;
-    margin-top: 46px;
+    margin-bottom: 49px;
+    margin-top: 63px;
+    margin-left: -3px;
+  }
+
+  .contacts-details__list {
+    @include contacts-list-tablet;
   }
 }
 
@@ -38,7 +45,7 @@
   .contacts-details__title {
     @include intro-text-desctop;
 
-    margin-top: 150px;
-    margin-bottom: 62px;
+    margin-top: 143px;
+    margin-bottom: 48px;
   }
 }

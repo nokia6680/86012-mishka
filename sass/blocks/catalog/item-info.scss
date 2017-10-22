@@ -11,6 +11,20 @@
   }
 }
 
+.item-info__name {
+  margin-bottom: 3px;
+}
+
+.item-info__name--basket {
+  margin-top: -4px;
+  margin-bottom: 5px;
+}
+
+.item-info__name--big-basket {
+  margin-top: -4px;
+  margin-bottom: 5px;
+}
+
 .item-info__link {
   text-decoration: none;
   color: #000000;
@@ -41,7 +55,7 @@
 }
 
 .item-info__details {
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 }
 
 .item-info__purchase {
@@ -50,7 +64,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding-top: 22px;
+  padding-top: 21px;
 
   border-top: 1px solid #ececec;
 
@@ -63,7 +77,7 @@
   cursor: pointer;
 
   right: 0;
-  top: 25px;
+  top: 22px;
 
   &:hover {
     fill: $hover;
@@ -82,21 +96,77 @@
     padding-bottom: 28px;
   }
 
+  .item-info__name {
+    @include catalog-item-tablet;
+  }
+
+  .item-info__name--basket {
+    margin-top: -3px;
+    margin-bottom: 9px;
+  }
+
+  .item-info__name--big-basket {
+    margin-top: -4px;
+    margin-bottom: 7px;
+  }
+
+  .item-info__details {
+    @include catalog-item-details-tablet;
+  }
+
+  .item-info__price {
+    @include catalog-item-price-tablet;
+  }
+
   .item-info__purchase {
-    padding-top: 23px;
+    padding-top: 21px;
 
     border-top: 1px solid #ececec;
+  }
+
+  .item-info__icon-cart {
+    position: absolute;
+    fill: #cccccc;
+    cursor: pointer;
+
+    right: 5px;
+    top: 23px;
+
+    &:hover {
+      fill: $hover;
+    }
+
+    &:active {
+      fill: $hover;
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: $desctop-width) {
   .item-info {
     width: 100%;
-    margin-top: 28px;
+    margin-top: 29px;
     padding-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-left: 26px;
+  }
+
+  .item-info__name--rabbit {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .item-info__name--basket {
+    margin-top: -1px;
+    margin-bottom: 1px;
+  }
+
+  .item-info__name--big-basket {
+    margin-top: 0;
+    margin-bottom: 3px;
   }
 
   .item-info__details--desktop {
@@ -107,13 +177,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  .item-info__description--desktop {
+    margin-bottom: 13px;
   }
 
   .item-info__purchase {
     width: auto;
     margin-top: auto;
-    padding-top: 23px;
+    padding-top: 18px;
+    margin-top: 10px;
 
     border-top: 1px solid #ececec;
+  }
+  .item-info__purchase--big-basket {
+    margin-top: 0;
+    padding-top: 21px;
   }
 }
