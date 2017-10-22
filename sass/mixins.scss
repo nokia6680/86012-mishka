@@ -1031,13 +1031,13 @@
 }
 
 @mixin review-toggle {
+  &:hover {
+    fill: rgb(102, 102, 102);
+  }
   &:active {
-    fill: #b2b2b2;
+    fill: rgb(178, 178, 178);
   }
 
-  &:hover {
-    fill: #666666;
-  }
 }
 
 @mixin social-link {

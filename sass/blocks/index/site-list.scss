@@ -5,7 +5,7 @@
 }
 
 .site-list {
-  display: none;
+  display: block;
 }
 
 .site-list__item {
@@ -19,7 +19,7 @@
 }
 
 .site-list--hide {
-  display: block;
+  display: none;
 }
 
 .site-list__link {

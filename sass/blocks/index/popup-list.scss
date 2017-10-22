@@ -18,10 +18,15 @@
 
 .popup-list__checkbox + label {
   @include checkbox-modal-default;
+  border-color: #ececec;
 }
 
 .popup-list__checkbox + label::after {
   @include custom-modal-checkbox;
+}
+
+.popup-list__checkbox + label:hover::after {
+  border-color: #c7c7c7;
 }
 
 .popup-list__checkbox:checked + label::after {

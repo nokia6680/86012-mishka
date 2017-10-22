@@ -7,7 +7,7 @@
 }
 
 .user-list {
-  display: none;
+  display: block;
 }
 
 .user-list__item {
@@ -21,7 +21,7 @@
 }
 
 .user-list--hide {
-  display: block;
+  display: none;
 }
 
 .user-list__link {
