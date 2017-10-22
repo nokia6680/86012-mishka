@@ -44,10 +44,13 @@
 
   .details-item__value {
     @include contacts-list-tablet;
+    margin-right: 24px;
   }
 
   .details-item__description {
     @include contacts-list-tablet;
+
+    width: 221px;
   }
 
   .details-item__email-to {

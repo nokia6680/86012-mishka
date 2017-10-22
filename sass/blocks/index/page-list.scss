@@ -111,6 +111,7 @@
     height: 28px;
     bottom: -17px;
 
+    width: 768px;
   }
 
   .page-list__item {
@@ -172,9 +173,11 @@
 
   .page-list::after {
     @include curve-figure;
+    bottom: -4px;
+    left: -39px;
+    height: 40px;
 
-    left: 0px;
-    height: 30px;
+    width: 1250px;
   }
 
   .page-list__item {

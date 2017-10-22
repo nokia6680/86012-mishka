@@ -172,6 +172,16 @@
   color: #000000;
 }
 
+@mixin advantage-title-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 20px;
+    weight: bold;
+  }
+  line-height: 22px;
+  color: #000000;
+}
+
 @mixin index-title-tablet {
   font: {
     family: "Open Sans", "Arial", sans-serif;
@@ -179,6 +189,16 @@
     weight: bold;
   }
   line-height: 50px;
+  color: #000000;
+}
+
+@mixin index-title-desktop {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 53px;
+    weight: bold;
+  }
+  line-height: 57px;
   color: #000000;
 }
 /*Текст заголовка секции ОТЗЫВЫ*/
@@ -204,11 +224,33 @@
   color: #000000;
 }
 
+@mixin review-title-desktop {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 53px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 57px;
+  color: #000000;
+}
+
 /*Текст отзыва*/
 @mixin review-description-text {
   font: {
     family: "Open Sans", "Arial", sans-serif;
     size: 15px;
+    weight: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin review-description-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
     weight: normal;
   }
   line-height: 30px;
@@ -227,11 +269,22 @@
   color: #000000;
 }
 
+@mixin author-name-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 18px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+}
+
 @mixin author-instagram-text {
   font: {
     family: "Open Sans", "Arial", sans-serif;
     size: 17px;
-    weight: bold;
+    weight: 400;
     style: normal;
   }
   line-height: 30px;
@@ -260,6 +313,18 @@
   }
   line-height: 30px;
   color: #000000;
+  text-decoration: none;
+}
+
+@mixin contacts-list-mobile {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
   text-decoration: none;
 }
 
@@ -346,6 +411,18 @@
   text-decoration: none;
 }
 
+@mixin form-label-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 19px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
 @mixin form-required-text {
   font: {
     family: "Open Sans", "Arial", sans-serif;
@@ -354,6 +431,18 @@
     style: normal;
   }
   line-height: 16px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin form-required-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
   color: #444444;
   text-decoration: none;
 }
@@ -386,6 +475,18 @@
   text-decoration: none;
 }
 
+@mixin catalog-item-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 20px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
 @mixin catalog-item-details {
   font: {
     family: "Open Sans", "Arial", sans-serif;
@@ -398,10 +499,34 @@
   text-decoration: none;
 }
 
+@mixin catalog-item-details-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 15px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
 @mixin catalog-item-price {
   font: {
     family: "Open Sans", "Arial", sans-serif;
     size: 15px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin catalog-item-price-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
     weight: bold;
     style: normal;
   }
@@ -550,11 +675,12 @@
 
 @mixin checkbox-default {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   cursor: pointer;
 
   position: relative;
   padding-left: 62px;
+  padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
@@ -616,7 +742,7 @@
   display: block;
   width: 40px;
   height: 39px;
-  top: -10px;
+  top: -11px;
   left: 0;
   border: 2px solid #444444;
 
@@ -678,7 +804,7 @@
   content: "";
   position: absolute;
   top: 2px;
-  left: 10px;
+  left: 9px;
   display: block;
   width: 22px;
   height: 16px;
@@ -710,7 +836,7 @@
 @mixin custom-radio {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -7px;
   left: 0px;
   display: block;
   width: 39px;
@@ -745,7 +871,7 @@
 @mixin radio-checked {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 5px;
   left: 12px;
   display: block;
   width: 16px;
@@ -816,8 +942,9 @@
 }
 
 @mixin retina {
-  @media(min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-    @content;
+  @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/review@2x.jpg");
+    background-size: cover;
   }
 }
 
@@ -905,13 +1032,13 @@
 }
 
 @mixin review-toggle {
+  &:hover {
+    fill: rgb(102, 102, 102);
+  }
   &:active {
-    fill: #b2b2b2;
+    fill: rgb(178, 178, 178);
   }
 
-  &:hover {
-    fill: #666666;
-  }
 }
 
 @mixin social-link {
@@ -940,4 +1067,8 @@
   transition-duration: 0.2s;
   transition-timing-function: initial;
   transition-delay: initial;
+}
+
+@mixin retina {
+
 }

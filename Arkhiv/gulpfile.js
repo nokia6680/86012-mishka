@@ -21,7 +21,7 @@ var uglify = require("gulp-uglify");
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(less())
     .pipe(postcss([
       autoprefixer()
     ]))

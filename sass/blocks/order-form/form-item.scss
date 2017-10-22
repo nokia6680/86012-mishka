@@ -8,10 +8,16 @@
   @include form-title-text;
   @include marpad-null;
 
-  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-bottom: 22px;
   padding-right: 200px;
 
   position: relative;
+}
+
+.form-item__legend--details {
+  margin-bottom: 18px;
+  margin-top: 2px;
 }
 
 .form-item__legend::after {
@@ -45,7 +51,7 @@
 }
 
 .form-item__label {
-  @include form-title-text;
+  @include form-label-text;
   @include marpad-null;
 
   margin-bottom: 25px;
@@ -68,8 +74,8 @@
 .form-item__input {
   border: 0;
   border-bottom: 2px solid #000000;
-  padding-top: 13px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   width: 100%;
   background-color: transparent;
 
@@ -101,6 +107,8 @@
 
 .form-item__contact {
   position: relative;
+  margin-top: -17px;
+  margin-bottom: 18px;
 }
 
 .form-item__icon--tel {
@@ -115,16 +123,24 @@
   display: block;
   fill: #cccccc;
   right: 38px;
-  bottom: 18px;
+  bottom: 10px;
+  width: 32px;
+  height: 32px;
 }
 
 .form-item__textarea {
   min-height: 138px;
-  border: 2px solid black;
+  border: 2px solid #444444;
 
-  padding: 17px;
+  padding: 13px;
   outline: none;
 }
+
+.form-item__legend--textarea {
+  margin-bottom: 27px;
+  margin-top: -18px;
+}
+
 
 .form-item__textarea:hover {
   border-color: $hover;
@@ -137,7 +153,6 @@
 .order-form__description {
   @include form-required-text;
 }
-
 
 @media (min-width: $tablet-width) {
   .form-item {
@@ -157,6 +172,8 @@
   }
 
   .form-item__label {
+    @include form-label-tablet;
+
     width: 167px;
     padding-right: 0;
   }
@@ -172,22 +189,32 @@
     align-items: baseline;
     flex-wrap: wrap;
     position: relative;
+
+    margin-top: -17px;
+  }
+
+  .form-item__input--tel {
+    height: 50px;
+  }
+
+  .form-item__input--email {
+    height: 50px;
   }
 
   .form-item__icon--tel {
     position: absolute;
     display: block;
     fill: #cccccc;
-    right: 76px;
-    bottom: 18px;
+    right: 77px;
+    bottom: 22px;
   }
 
   .form-item__icon--email {
     position: absolute;
     display: block;
     fill: #cccccc;
-    right: 76px;
-    bottom: 18px;
+    right: 72px;
+    bottom: 13px;
   }
 
   .form-item__input {
@@ -198,12 +225,14 @@
 
   .form-item__textarea {
     width: 500px;
-    min-height: 138px;
+    min-height: 142px;
     border: 2px solid black;
   }
 
   .order-form__description {
-    width: 300px;
+    width: 400px;
+
+    @include form-required-tablet;
   }
 }
 
@@ -218,7 +247,7 @@
   .form-item__legend {
     width: 175px;
     text-align: left;
-    padding-left: 60px;
+    padding-left: 62px;
     padding-right: 0;
   }
 
@@ -269,7 +298,7 @@
 
   .form-item__textarea {
     width: 700px;
-    min-height: 138px;
+    min-height: 141px;
     border: 2px solid black;
   }
 }

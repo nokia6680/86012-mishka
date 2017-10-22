@@ -8,7 +8,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-bottom: 85px;
+    padding-bottom: 78px;
 
     @include curve-line-tablet;
 
@@ -18,7 +18,7 @@
 
 @media (min-width: $desctop-width) {
   .reviews {
-    padding-bottom: 91px;
+    padding-bottom: 88px;
 
     @include curve-line-desktop;
 

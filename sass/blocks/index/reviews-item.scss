@@ -38,14 +38,17 @@
   }
 
   .reviews-item__description {
-    width: 590px;
+    @include review-description-tablet;
+    width: 643px;
     order: 1;
   }
 
   .reviews-item__name {
+    @include author-name-tablet;
+
     width: 100%;
     text-align: left;
-    margin-top: 62px;
+    margin-top: 57px;
     margin-bottom: 0;
     margin-left: 0;
     order: 2;
@@ -56,8 +59,8 @@
     margin-left: 0;
     order: 3;
 
-    margin-top: 0;
-    margin-bottom: 50px;
+    margin-top: 3;
+    margin-bottom: 51px;
   }
 
   .reviews-item__toggle {
@@ -68,8 +71,8 @@
     margin-bottom: 0;
     position: absolute;
 
-    right: -75px;
-    bottom: 50px;
+    right: -1px;
+    bottom: 54px;
   }
 }
 
@@ -82,14 +85,16 @@
   }
 
   .reviews-item__description {
-    width: 680px;
+    width: 775px;
     order: 1;
   }
 
   .reviews-item__name {
+    @include author-name-text;
+
     width: 260px;
 
-    margin-top: 0;
+    margin-top: 39px;
     margin-bottom: 0;
     margin-left: 0;
     order: 2;
@@ -99,6 +104,8 @@
     width: 175px;
     margin-left: 0;
     order: 4;
+
+    margin-bottom: 95px;
   }
 
   .reviews-item__toggle {
@@ -106,7 +113,7 @@
     margin-left: auto;
     order: 3;
 
-    right: -190px;
-    bottom: 50px;
+    right: -80px;
+    bottom: 99px;
   }
 }
