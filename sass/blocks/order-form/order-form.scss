@@ -27,7 +27,30 @@
 @media (min-width: $tablet-width) {
   .order-form__item {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+  }
+
+  .order-form__item--details {
+    padding-top: 50px;
+    padding-bottom: 58px;
+  }
+
+  .order-form__item--color {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .order-form__item--tel {
+    margin-top: -5px;
+    margin-bottom: 0;
+    padding-bottom: 7px;
+    padding-top: 68px;
+  }
+
+  .order-form__item--mail {
+    margin-bottom: 46px;
+    padding-bottom: 28px;
+    padding-top: 12px;
   }
 
   .order-form__item--gray {
@@ -39,6 +62,10 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
+
+    padding-top: 2px;
+    padding-bottom: 5px;
+    margin-bottom: 17px;
   }
 
   .order-form__book {
@@ -60,12 +87,19 @@
 
   .order-form__submit {
     order: 1;
+
+    width: 231px;
+    padding: 15px 17px 15px 14px;
   }
 }
 
 @media (min-width: $desctop-width) {
   .order-form__item--gray {
     background-color: #f1f1f1;
+  }
+
+  .order-form__item--details {
+    padding-bottom: 55px;
   }
 
   .order-form__book {
@@ -88,5 +122,7 @@
 
   .order-form__submit {
     order: 1;
+
+    margin-top: 29px;
   }
 }

@@ -88,18 +88,7 @@
   margin-bottom: -10px;
 }
 
-.form-list__label--name {
-  margin-bottom: 0px;
-}
-.form-list__label--surname {
-  margin-bottom: 0px;
-}
-
-.form-list__label--fathername {
-  margin-bottom: 0px;
-}
-
-.form-list__input--text {
+.form-list__input {
   border: 0;
   border-bottom: 2px solid #000000;
   padding-top: 17px;
@@ -130,10 +119,51 @@
   .form-list__item {
     padding-top: 15px;
     padding-bottom: 15px;
+
+    @include form-label-tablet;
   }
 
   .form-list__item--type {
     margin-bottom: 24px;
+  }
+
+  .form-list__label--accs {
+    @include form-label-tablet;
+  }
+
+  .form-list__label--toys {
+    @include form-label-tablet;
+  }
+
+  .form-list__label--white {
+    margin-top: -1px;
+    margin-bottom: -9px;
+  }
+  .form-list__label--gray {
+    margin-top: -1px;
+    margin-bottom: -9px;
+    margin-left: 12px;
+    margin-right: 1px;
+  }
+  .form-list__label--tiffany {
+    margin-top: 6px;
+    margin-bottom: -9px;
+  }
+  .form-list__label--black {
+    margin-top: 6px;
+    margin-bottom: -9px;
+    margin-left: 11px;
+    margin-right: 1px;
+  }
+  .form-list__label--pink {
+    margin-top: 15px;
+    margin-bottom: -9px;
+  }
+  .form-list__label--orange {
+    margin-top: 15px;
+    margin-bottom: -10px;
+    margin-left: 12px;
+    margin-right: 1px;
   }
 
   .form-list__item--name {
@@ -143,12 +173,23 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    margin-bottom: 24px;
   }
 
-  .form-list__input--text {
+  .form-list__item--name:last-child {
+    margin-bottom: 0;
+  }
+
+  .form-list__input{
     margin-left: 25px;
     width: 100%;
-    padding-left: 18px;
+    padding-left: 17px;
+    padding-top: 19px;
+    padding-bottom: 10px;
   }
 
   .form-list--color {
@@ -162,6 +203,7 @@
     width: 250px;
   }
 }
+
 
 @media (min-width: $desctop-width) {
   .fomr-list__item {
@@ -187,6 +229,39 @@
 
   .form-list__item--color:nth-child(3n) {
     width: 291px;
+  }
+
+  .form-list__label--white {
+    margin-top: 0px;
+    margin-bottom: -9px;
+  }
+  .form-list__label--gray {
+    margin-top: 0px;
+    margin-bottom: -9px;
+    margin-left: -30px;
+    margin-right: 1px;
+  }
+  .form-list__label--tiffany {
+    margin-top: 0px;
+    margin-bottom: -9px;
+    margin-left: -58px;
+  }
+  .form-list__label--black {
+    margin-top: 8px;
+    margin-bottom: -9px;
+    margin-left: 0px;
+    margin-right: 1px;
+  }
+  .form-list__label--pink {
+    margin-top: 8px;
+    margin-bottom: -9px;
+    margin-left: -30px;
+  }
+  .form-list__label--orange {
+    margin-top: 8px;
+    margin-bottom: -10px;
+    margin-left: -58px;
+    margin-right: 1px;
   }
 
   .form-list__input--text {

@@ -411,6 +411,18 @@
   text-decoration: none;
 }
 
+@mixin form-label-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 19px;
+    weight: bold;
+    style: normal;
+  }
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
 @mixin form-required-text {
   font: {
     family: "Open Sans", "Arial", sans-serif;
@@ -419,6 +431,18 @@
     style: normal;
   }
   line-height: 16px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@mixin form-required-tablet {
+  font: {
+    family: "Open Sans", "Arial", sans-serif;
+    size: 17px;
+    weight: normal;
+    style: normal;
+  }
+  line-height: 30px;
   color: #444444;
   text-decoration: none;
 }

@@ -65,7 +65,7 @@
           <symbol id="arrow-prev" width="50px" height="26.003px" viewBox="0 0 50 26.003">
             <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
           </symbol>
-          <symbol viewBox="0 0 32 32" id="icon-mail" width="32px" height="21px">
+          <symbol id="icon-mail" width="32px" height="32px">
             <path d="M28 5H4C1.791 5 0 6.792 0 9v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4V9c0-2.208-1.791-4-4-4zM2 10.25l6.999 5.25L2 20.75v-10.5zM30 22c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277c.533.397 1.166.6 1.8.6.633 0 1.266-.201 1.799-.6l4.369-3.277L30 22zm0-1.25l-7-5.25 7-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4L10.665 15.5l-.833-.625L2 9.001V9c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2l-12.801 9.602z"/>
           </symbol>
           <symbol viewBox="0 0 66 100.801" id="icon-map">
@@ -172,16 +172,16 @@
         <ul class="form-item__list form-list form-list--type">
           <li class="form-list__item form-list__item--type">
             <input class="visually-hidden form-list__input form-list__input--radio"type="radio" name="type" value="Аксессуар для интерьера" id="accs" checked>
-            <label for="accs">Аксессуар для интерьера</label>
+            <label class="form-list__label form-list__label--accs" for="accs">Аксессуар для интерьера</label>
           </li>
           <li class="form-list__item form-list__item--type">
             <input class="visually-hidden form-list__input form-list__input--radio"type="radio" name="type" value="Детская игрушка" id="toys">
-            <label for="toys">Детская игрушка</label>
+            <label class="form-list__label form-list__label--toys" for="toys">Детская игрушка</label>
           </li>
         </ul>
       </div>
 
-      <div class="order-form__item form-item order-form__item--gray">
+      <div class="order-form__item form-item order-form__item--color order-form__item--gray">
         <div class="form-item order-form__container">
           <h2 class="form-item__legend form-item__legend--color">Цвет</h2>
           <ul class="form-item__list form-list form-list--color">
@@ -213,27 +213,27 @@
         </div>
       </div>
 
-      <div class="order-form__item form-item order-form__container">
+      <div class="order-form__item form-item order-form__item--details order-form__container">
         <h2 class="form-item__legend form-item__legend--details">Фио</h2>
         <ul class="form-item__list form-list form-item__list--details">
           <li class="form-list__item form-list__item--name">
             <label class="form-list__label form-list__label--name" for="name">Имя:</label>
-            <input class="form-list__input form-list__input--text" type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
+            <input class="form-list__input form-list__input--name" type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
           </li>
           <li class="form-list__item form-list__item--name">
             <label class="form-list__label form-list__label--surname" for="surname">Фамилия:</label>
-            <input class="form-list__input form-list__input--text" type="text" name="surname" placeholder="Укажите фамилию*" id="surname" required>
+            <input class="form-list__input form-list__input--surname" type="text" name="surname" placeholder="Укажите фамилию*" id="surname" required>
           </li>
           <li class="form-list__item form-list__item--name">
             <label class="form-list__label form-list__label--fathername" for="fathername">Отчество:</label>
-            <input class="form-list__input form-list__input--text" type="text" name="fathername" placeholder="Отчество, если желаете" id="fathername">
+            <input class="form-list__input form-list__input--fathername" type="text" name="fathername" placeholder="Отчество, если желаете" id="fathername">
           </li>
         </ul>
       </div>
 
-      <div class="order-form__item form-item order-form__item--gray">
+      <div class="order-form__item form-item order-form__item--tel order-form__item--gray">
         <div class="form-item__contact order-form__container">
-          <label class="form-item__label" for="tel">Тел</label>
+          <label class="form-item__legend form-item__legend--tel" for="tel">Тел</label>
           <input class="form-item__input form-item__input--tel" type="tel" name="tel" placeholder="+7-XXX-XX-XX*" id="tel" required/>
           <svg class="form-item__icon--tel" width="25" height="24">
             <use xlink:href="#icon-phone"></use>
@@ -241,17 +241,17 @@
         </div>
       </div>
 
-      <div class="order-form__item form-item order-form__item--gray">
+      <div class="order-form__item form-item order-form__item--mail order-form__item--gray">
         <div class="form-item__contact order-form__container">
           <label class="form-item__legend form-item__legend--email" for="email">e-mail</label>
           <input class="form-item__input form-item__input--email" type="email" name="email" placeholder="Ваш Email*" id="email" required>
-          <svg class="form-item__icon--email" width="32" height="21">
+          <svg class="form-item__icon--email" width="32" height="32">
             <use xlink:href="#icon-mail"></use>
           </svg>
         </div>
       </div>
 
-      <div class="order-form__item form-item order-form__container order-form__item--textarea">
+      <div class="order-form__item form-item order-form__item--textarea order-form__container">
         <label for="textarea" class="form-item__legend form-item__legend--textarea">Доп</label>
         <div class="form-item__wrapper">
           <textarea class="form-item__textarea" name="additional" id="textarea" placeholder="Опишите все ваши пожелания к заказу" id="additional" rows="4"></textarea>
