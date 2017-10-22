@@ -942,8 +942,9 @@
 }
 
 @mixin retina {
-  @media(min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-    @content;
+  @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/review@2x.jpg");
+    background-size: cover;
   }
 }
 
@@ -1066,4 +1067,8 @@
   transition-duration: 0.2s;
   transition-timing-function: initial;
   transition-delay: initial;
+}
+
+@mixin retina {
+
 }

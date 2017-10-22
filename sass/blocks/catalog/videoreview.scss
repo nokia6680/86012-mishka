@@ -63,15 +63,15 @@
   left: 79px;
   top: 36px;
 
-  &:active {
-    transform: scale(0.8);
-    opacity: 0.3;
+  &:hover {
+    transform: scale(1.2);
 
     @include soft-animation;
   }
 
-  &:hover {
-    transform: scale(1.2);
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
 
     @include soft-animation;
   }
