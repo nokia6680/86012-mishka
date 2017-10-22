@@ -33,7 +33,6 @@
   @include soft-animation;
 }
 
-
 .form-list__input--radio:checked + label::after {
   @include radio-checked;
 }
@@ -63,18 +62,48 @@
 }
 
 .form-list__item--color {
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 .form-list__item--color:last-child {
   margin-bottom: 0;
 }
 
+.form-list__label--white {
+  margin-bottom: -9px;
+}
+.form-list__label--gray {
+  margin-bottom: -9px;
+}
+.form-list__label--tiffany {
+  margin-bottom: -9px;
+}
+.form-list__label--black {
+  margin-bottom: -9px;
+}
+.form-list__label--pink {
+  margin-bottom: -9px;
+}
+.form-list__label--orange {
+  margin-bottom: -10px;
+}
+
+.form-list__label--name {
+  margin-bottom: 0px;
+}
+.form-list__label--surname {
+  margin-bottom: 0px;
+}
+
+.form-list__label--fathername {
+  margin-bottom: 0px;
+}
+
 .form-list__input--text {
   border: 0;
   border-bottom: 2px solid #000000;
-  padding-top: 13px;
-  padding-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 13px;
   width: 100%;
   background-color: transparent;
   outline: none;

@@ -14,9 +14,14 @@
 .order-form__submit {
   width: 260px;
   margin: 0;
-  margin-top: 33px;
+  margin-top: 32px;
 
   @include button;
+  @include page-button-text;
+}
+
+.order-form__item--textarea {
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {

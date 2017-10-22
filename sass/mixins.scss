@@ -651,11 +651,12 @@
 
 @mixin checkbox-default {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   cursor: pointer;
 
   position: relative;
   padding-left: 62px;
+  padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
@@ -717,7 +718,7 @@
   display: block;
   width: 40px;
   height: 39px;
-  top: -10px;
+  top: -11px;
   left: 0;
   border: 2px solid #444444;
 
@@ -779,7 +780,7 @@
   content: "";
   position: absolute;
   top: 2px;
-  left: 10px;
+  left: 9px;
   display: block;
   width: 22px;
   height: 16px;
@@ -811,7 +812,7 @@
 @mixin custom-radio {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -7px;
   left: 0px;
   display: block;
   width: 39px;
@@ -846,7 +847,7 @@
 @mixin radio-checked {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 5px;
   left: 12px;
   display: block;
   width: 16px;

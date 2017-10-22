@@ -8,10 +8,16 @@
   @include form-title-text;
   @include marpad-null;
 
-  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-bottom: 22px;
   padding-right: 200px;
 
   position: relative;
+}
+
+.form-item__legend--details {
+  margin-bottom: 18px;
+  margin-top: 2px;
 }
 
 .form-item__legend::after {
@@ -68,8 +74,8 @@
 .form-item__input {
   border: 0;
   border-bottom: 2px solid #000000;
-  padding-top: 13px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   width: 100%;
   background-color: transparent;
 
@@ -101,6 +107,8 @@
 
 .form-item__contact {
   position: relative;
+  margin-top: -17px;
+  margin-bottom: 18px;
 }
 
 .form-item__icon--tel {
@@ -116,15 +124,23 @@
   fill: #cccccc;
   right: 38px;
   bottom: 18px;
+  width: 32px;
+  height: 21px;
 }
 
 .form-item__textarea {
   min-height: 138px;
   border: 2px solid black;
 
-  padding: 17px;
+  padding: 13px;
   outline: none;
 }
+
+.form-item__legend--textarea {
+  margin-bottom: 27px;
+  margin-top: -18px;
+}
+
 
 .form-item__textarea:hover {
   border-color: $hover;
