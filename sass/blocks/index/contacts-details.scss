@@ -5,6 +5,10 @@
   align-items: flex-start;
 }
 
+.contacts-details__flag {
+  display: none;
+}
+
 .contacts-details__title {
   @include contacts-title-text;
 
@@ -22,6 +26,15 @@
 
 
 @media (min-width: $tablet-width) {
+  .contacts-details__flag {
+    position: absolute;
+    display: block;
+    width: 47px;
+    height: 81px;
+    top: 48px;
+    right: 52px;
+  }
+
   .contacts-details__title {
     @include intro-text-tablet;
 
@@ -40,6 +53,15 @@
     margin-left: 175px;
     width: 350px;
     padding: 0;
+  }
+
+  .contacts-details__flag {
+    position: absolute;
+    display: block;
+    width: 47px;
+    height: 81px;
+    top: 135px;
+    left: -112px;
   }
 
   .contacts-details__title {

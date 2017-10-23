@@ -9,10 +9,6 @@
   @include container;
 }
 
-.contacts-details__flag {
-  display: none;
-}
-
 .contacts__map {
   height: 460px;
   width: 100%;
@@ -35,7 +31,7 @@
   border: 0;
 }
 
-.contacts-details__send-us {
+.contacts__send-us {
   @include button;
   @include goods-order-text;
 
@@ -49,12 +45,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__container {
-    @include container;
-
-    position: relative;
-  }
-
   .contacts {
     display: flex;
     flex-direction: row;
@@ -62,13 +52,10 @@
     flex-wrap: wrap;
   }
 
-  .contacts-details__flag {
-    position: absolute;
-    display: block;
-    width: 47px;
-    height: 81px;
-    top: 48px;
-    right: 52px;
+  .contacts__container {
+    @include container;
+
+    position: relative;
   }
 
   .contacts__map {
@@ -86,7 +73,7 @@
     }
   }
 
-  .contacts-details__send-us {
+  .contacts__send-us {
     margin: 52px auto 57px auto;
     width: 232px;
     padding: 15px 40px 15px 39px;
@@ -107,15 +94,6 @@
     position: relative;
   }
 
-  .contacts-details__flag {
-    position: absolute;
-    display: block;
-    width: 47px;
-    height: 81px;
-    top: 135px;
-    left: -112px;
-  }
-
   .contacts__map {
     width: 525px;
 
@@ -133,7 +111,7 @@
     margin-top: 70px;
   }
 
-  .contacts-details__send-us {
+  .contacts__send-us {
     position: absolute;
     bottom: 0;
     margin-left: 175px;

@@ -84,7 +84,6 @@
 
   .main-nav__logo {
     order: 1;
-
     padding: 0;
     padding-top: 5px;
   }
@@ -104,7 +103,6 @@
     @include under-navi-text;
 
     order: 3;
-
     z-index: 4;
   }
 
@@ -114,9 +112,7 @@
     display: block;
     order: 4;
     margin-left: auto;
-
     z-index: 3;
-
     padding-bottom: 22px;
     padding-top: 17px;
   }
@@ -141,7 +137,6 @@
     margin-left: 50px;
     margin-top: 5px;
     order: 2;
-
     padding: 0;
   }
 
@@ -168,9 +163,7 @@
     justify-content: flex-start;
     align-items: center;
     order: 4;
-
     margin-right: auto;
-
     z-index: 5;
   }
 
@@ -180,5 +173,4 @@
     order: 5;
     margin-left: auto;
   }
-
 }

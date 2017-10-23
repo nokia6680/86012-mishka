@@ -841,7 +841,7 @@
   display: block;
   width: 39px;
   height: 39px;
-  border: 3px solid #444444;
+  border: 2px solid #444444;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
@@ -852,7 +852,7 @@
     display: block;
     width: 52px;
     height: 52px;
-    border: 3px solid #444444;
+    border: 2px solid #444444;
     border-radius: 50%;
   }
   @media (min-width: $desctop-width) {
@@ -863,7 +863,7 @@
     display: block;
     width: 52px;
     height: 52px;
-    border: 3px solid #444444;
+    border: 2px solid #444444;
     border-radius: 50%;
   }
 }
