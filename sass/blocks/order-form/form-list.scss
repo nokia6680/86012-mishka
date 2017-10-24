@@ -98,6 +98,20 @@
   outline: none;
 }
 
+.form-list__input {
+  &:hover {
+    border-color: $hover;
+
+    @include soft-animation;
+  }
+
+  &:active {
+    border-color: $hover;
+
+    @include soft-animation;
+  }
+}
+
 .form-list__input--text:hover {
   border-color: $hover;
 

@@ -5,9 +5,10 @@
   align-items: center;
 
   width: 260px;
+  margin: 0 auto;
 }
 
-.modal__submit {
+.form-popup__submit {
   @include mobile-popup-btn;
 
   width: 260px;
@@ -25,7 +26,7 @@
     width: 350px;
   }
 
-  .modal__submit {
+  .form-popup__submit {
     width: 350px;
   }
 }

@@ -1,25 +1,4 @@
 .modal {
-  display: block;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(255,255,255,0.7);
-  z-index: 1000;
-}
-
-.overlay--on {
-  display: flex;
-}
-
-.modal {
   @include container;
 
   display: flex;
@@ -34,13 +13,6 @@
   background-color: #ffffff;
   box-shadow: 0 10px 9px -6px #c6c6c6;
   z-index: 1001;
-
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 
 .modal__title {

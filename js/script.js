@@ -10,12 +10,12 @@ navMain.classList.remove("site-list--nojs");
 userList.classList.remove("user-list--nojs");
 
 navToggle.addEventListener("click", function() {
-  if (navToggle.classList.contains("main-nav__toggle--on")) {
-    navToggle.classList.remove("main-nav__toggle--on");
+  if (navToggle.classList.contains("main-nav__toggle")) {
+    navToggle.classList.remove("main-nav__toggle");
     navMain.classList.remove("site-list--hide");
     userList.classList.remove("user-list--hide");
   } else {
-    navToggle.classList.add("main-nav__toggle--on");
+    navToggle.classList.add("main-nav__toggle");
     navMain.classList.add("site-list--hide");
     userList.classList.add("user-list--hide");
   }

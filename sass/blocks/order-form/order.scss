@@ -4,15 +4,3 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.order-description {
-  @include container;
-  margin-bottom: -28px;
-}
-
-.order-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-}

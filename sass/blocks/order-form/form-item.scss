@@ -144,10 +144,14 @@
 
 .form-item__textarea:hover {
   border-color: $hover;
+
+  @include soft-animation;
 }
 
 .form-item__textarea:active {
   border-color: $hover;
+
+  @include soft-animation;
 }
 
 .order-form__description {

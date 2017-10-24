@@ -18,11 +18,12 @@
 
 .popup-list__checkbox + label {
   @include checkbox-modal-default;
-  border-color: #ececec;
 }
 
 .popup-list__checkbox + label::after {
   @include custom-modal-checkbox;
+
+  border-color: #ececec;
 }
 
 .popup-list__checkbox + label:hover::after {
@@ -37,6 +38,20 @@
   .popup-list {
     width: 350px;
     height: 52px;
+  }
+
+  .popup-list__checkbox + label::after {
+    @include custom-modal-checkbox;
+
+    border-color: #ececec;
+  }
+
+  .popup-list__checkbox + label:hover::after {
+    border-color: #c7c7c7;
+  }
+
+  .popup-list__checkbox:checked + label::after {
+    border-color: #63d1bb;
   }
 }
 
@@ -53,5 +68,19 @@
     padding-top: 15px;
     padding-bottom: 20px;
     cursor: pointer;
+  }
+
+  .popup-list__checkbox + label::after {
+    @include custom-modal-checkbox;
+
+    border-color: #ececec;
+  }
+
+  .popup-list__checkbox + label:hover::after {
+    border-color: #c7c7c7;
+  }
+
+  .popup-list__checkbox:checked + label::after {
+    border-color: #63d1bb;
   }
 }
