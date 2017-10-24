@@ -79,6 +79,10 @@
   right: 0;
   top: 22px;
 
+  &:focus {
+    fill: $hover;
+  }
+
   &:hover {
     fill: $hover;
   }

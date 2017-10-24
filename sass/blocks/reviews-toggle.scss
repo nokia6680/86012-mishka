@@ -12,7 +12,6 @@
   width: 130px;
   position: relative;
   background-color: transparent;
-  outline: none;
 }
 
 .reviews-toggle__arrow-prev {
@@ -28,17 +27,12 @@
   @include review-toggle;
 }
 
-.reviews-toggle__arrow-next:focus {
-  fill: red;
-}
-
 .reviews-toggle__next {
   height: 50px;
   border: 1px solid #ececec;
   width: 130px;
   position: relative;
   background-color: transparent;
-  outline: none;
 }
 
 .reviews-toggle__arrow-next {

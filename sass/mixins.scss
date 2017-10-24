@@ -69,6 +69,7 @@
   line-height: 57px;
   color: #000000;
 }
+
 /*Цвет текста зеленых кнопок*/
 @mixin goods-text {
   font: {
@@ -89,6 +90,7 @@
   line-height: 30px;
   color: #ffffff;
 }
+
 /*Цвет текста названия товара на главной"*/
 @mixin index-title-text {
   font: {
@@ -99,6 +101,7 @@
   line-height: 30px;
   color: #000000;
 }
+
 /*Цвет текста статуса товара*/
 @mixin goods-status-text {
   font: {
@@ -151,6 +154,7 @@
   line-height: 24px;
   color: #444444;
 }
+
 /*Цвет текста кнопки "Заказать"*/
 @mixin goods-order-text {
   font: {
@@ -161,6 +165,7 @@
   line-height: 20px;
   color: #444444;
 }
+
 /*Стиль и цвет текста списка преимуществ*/
 @mixin advantage-title-text {
   font: {
@@ -201,6 +206,7 @@
   line-height: 57px;
   color: #000000;
 }
+
 /*Текст заголовка секции ОТЗЫВЫ*/
 @mixin review-title-text {
   font: {
@@ -303,6 +309,7 @@
   color: #444444;
   text-decoration: none;
 }
+
 /*Название раздела Контакты*/
 @mixin contacts-title-text {
   font: {
@@ -622,8 +629,6 @@
 
   border: 2px solid black;
 
-  outline: none;
-
   &:hover {
     background-color: #444444;
     color: #ffffff;
@@ -904,7 +909,7 @@
   }
 }
 
-@mixin radiobox-conditions ($hover, $active) {
+@mixin radiobox-conditions($hover, $active) {
   & {
     &:hover {
       border-color: $hover;
