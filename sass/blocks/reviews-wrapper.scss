@@ -79,8 +79,8 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50px 12px;
-    
-    @include retina
+
+    @include retina;
   }
 
   .reviews-wrapper__title {

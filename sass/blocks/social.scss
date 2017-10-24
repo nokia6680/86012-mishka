@@ -40,7 +40,7 @@
 }
 
 .social__link {
- @include social-link;
+  @include social-link;
 }
 
 @media (min-width: $tablet-width) {
