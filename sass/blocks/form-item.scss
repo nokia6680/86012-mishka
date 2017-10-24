@@ -85,8 +85,6 @@
     border-color: $hover;
     @include soft-animation;
   }
-
-  outline: none;
 }
 
 .form-item__input:hover ~ svg {
