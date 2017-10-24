@@ -8,6 +8,7 @@
 .options-list__item {
   @include advantage-title-text;
 
+  width: 260px;
   padding-top: 58px;
   margin-bottom: 30px;
 }

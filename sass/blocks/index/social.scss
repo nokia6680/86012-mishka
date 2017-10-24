@@ -17,10 +17,11 @@
 .social::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 260px;
   height: 1px;
   background-color: #e5e5e5;
   top: 79px;
+  left: 0;
 }
 
 .social__list {

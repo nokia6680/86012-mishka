@@ -10,12 +10,13 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  width: 260px;
 
-  padding-right: 30px;
   padding-left: 47px;
-
   padding-top: 22px;
   padding-bottom: 16px;
+
+  margin: 0 auto;
 }
 
 .main-nav__toggle {
@@ -27,6 +28,7 @@
   vertical-align: middle;
   cursor: pointer;
   outline: none;
+  margin-left: 67px;
 }
 
 .main-nav__toggle--on {
@@ -40,8 +42,6 @@
 }
 
 .main-nav__image {
-  margin: 0 auto;
-
   @include logo-image;
 }
 
@@ -83,9 +83,11 @@
   }
 
   .main-nav__logo {
+    width: 112px;
     order: 1;
     padding: 0;
     padding-top: 5px;
+    margin-left: 0;
   }
 
   .main-nav__logo-image {
