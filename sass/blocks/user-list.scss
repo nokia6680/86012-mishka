@@ -29,23 +29,23 @@
   margin: 0 auto;
   width: 182px;
 
-    &:hover {
-      fill: $hover;
-      opacity: 0.6;
-    }
+  &:hover {
+    fill: $hover;
+    opacity: 0.6;
+  }
 
-    &:active {
-      fill: $hover;
-      opacity: 0.3;
-    }
+  &:active {
+    fill: $hover;
+    opacity: 0.3;
+  }
 
-    &:hover svg {
-      fill: #46c1ae;
-    }
+  &:hover svg {
+    fill: #46c1ae;
+  }
 
-    &:active svg {
-      fill: #bde3dd;
-    }
+  &:active svg {
+    fill: #bde3dd;
+  }
 }
 
 .user-list__item--search {

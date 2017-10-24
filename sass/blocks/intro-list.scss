@@ -18,20 +18,20 @@
 }
 
 .intro-list__link:hover {
-    color: $hover-link;
+  color: $hover-link;
 }
 
 .intro-list__link:active {
-    color: $active-link;
+  color: $active-link;
 }
 
 @media (min-width: $tablet-width) {
   .intro-list__link:hover {
-      color: $hover-link;
+    color: $hover-link;
   }
 
   .intro-list__link:active {
-      color: $active-link;
+    color: $active-link;
   }
 }
 
@@ -44,10 +44,10 @@
   }
 
   .intro-list__link:hover {
-      color: $hover-link;
+    color: $hover-link;
   }
 
   .intro-list__link:active {
-      color: $active-link;
+    color: $active-link;
   }
 }

@@ -72,18 +72,23 @@
 .form-list__label--white {
   margin-bottom: -9px;
 }
+
 .form-list__label--gray {
   margin-bottom: -9px;
 }
+
 .form-list__label--tiffany {
   margin-bottom: -9px;
 }
+
 .form-list__label--black {
   margin-bottom: -9px;
 }
+
 .form-list__label--pink {
   margin-bottom: -9px;
 }
+
 .form-list__label--orange {
   margin-bottom: -10px;
 }
@@ -198,7 +203,7 @@
     margin-bottom: 0;
   }
 
-  .form-list__input{
+  .form-list__input {
     margin-left: 25px;
     width: 100%;
     padding-left: 17px;
@@ -217,7 +222,6 @@
     width: 250px;
   }
 }
-
 
 @media (min-width: $desctop-width) {
   .fomr-list__item {
